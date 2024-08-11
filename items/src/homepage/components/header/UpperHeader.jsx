@@ -4,6 +4,8 @@ function UpperHeader({
   languageCode,
   address,
   addressHref,
+  job,
+  jobHref,
   companyBuy,
   companyBuyHref,
   sell,
@@ -25,19 +27,28 @@ function UpperHeader({
       </a>
       <div className="links">
         <a href={addressHref} className="address w-inline-block">
-          {address}
+          <img src={address} loading="lazy" alt="" class="image-13" width="146">
+          </img>
+        </a>
+        <a href={jobHref} className="address w-inline-block">
+          <img src={job} loading="lazy" alt="" class="image-15" width="146">
+          </img>
         </a>
         <a href={companyBuyHref} className="address w-inline-block">
-          {companyBuy}
+          <img src={companyBuy} loading="lazy" alt="" class="image-16" width="146">
+          </img>
         </a>
         <a href={sellHref} className="address w-inline-block">
-          {sell}
+          <img src={sell} loading="lazy" alt="" class="image-17" width="146">
+          </img>
         </a>
         <a href={pvsMapHref} className="address w-inline-block">
-          {pvsMap}
+          <img src={pvsMap} loading="lazy" alt="" class="image-18" width="146">
+          </img>
         </a>
         <a href={pvsHref} className="address w-inline-block">
-          {pvs}
+          <img src={pvs} loading="lazy" alt="" class="image-19" width="146">
+          </img>
         </a>
       </div>
       <a

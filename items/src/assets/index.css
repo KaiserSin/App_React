@@ -2964,6 +2964,7 @@ html {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
     text-decoration: none;
+    width: 100%;
   }
 
   .progress-container {
