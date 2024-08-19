@@ -1,4 +1,4 @@
-import "../../../../../assets/index.css"
+import "@/assets/index.css"
 
 const ProgressBar = ({ progress }) => {
     document.documentElement.style.setProperty("--pers", `${progress/50 *100}%`);
