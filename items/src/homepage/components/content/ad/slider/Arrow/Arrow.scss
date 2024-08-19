@@ -30,3 +30,8 @@
   margin: auto;
   inset: 0;
 }
+@media screen and (max-width: 780px) {
+  .arrow {
+    display: none;
+  }
+}

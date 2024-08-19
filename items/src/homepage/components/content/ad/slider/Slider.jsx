@@ -4,6 +4,8 @@ import { Arrow } from "./Arrow/Arrow.jsx";
 
 import "./Slider.scss";
 
+const SLIDER_INTERVAL_TIME = 5000;
+
 export const Slider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
 
@@ -18,7 +20,7 @@ export const Slider = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 3000);
+    const interval = setInterval(handleNext, SLIDER_INTERVAL_TIME);
     return () => clearInterval(interval);
   }, [slideNumber]);
 
@@ -38,7 +40,9 @@ export const Slider = () => {
               className={`slide__item ${slide} ${
                 index === slideNumber ? "active" : ""
               }`}
-            ></div>
+            >
+              <a href="#" className="slider__link"></a>
+            </div>
           ))}
         </div>
       </div>
