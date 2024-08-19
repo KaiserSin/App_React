@@ -1,4 +1,6 @@
 import { ProgressBar } from "./ProgressBar";
+import './LevelBlock.scss';
+
 
 const LevelBlock = ({progress}) =>{
     return(

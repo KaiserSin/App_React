@@ -1,3 +1,4 @@
+import './ProductCard.scss';
 
 const Card = ({image_url}) => {
     return (

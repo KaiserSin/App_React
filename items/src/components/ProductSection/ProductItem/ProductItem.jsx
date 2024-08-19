@@ -1,5 +1,7 @@
-import { Card } from "./Card"
-import { Description } from "./Description"
+import './ProductItem.scss';
+
+import { Card } from "../ProductCard/ProductCard"
+import { Description } from "../ProductDescription/ProductDescription"
 import {v4 as uuidv4} from 'uuid'
 
 const Item = ({id, image_url, currentprice, oldprice, text}) =>{

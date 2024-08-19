@@ -1,4 +1,5 @@
-import "@/assets/index.css"
+
+import './ProgressBar.scss';
 
 const ProgressBar = ({ progress }) => {
     document.documentElement.style.setProperty("--pers", `${progress/50 *100}%`);

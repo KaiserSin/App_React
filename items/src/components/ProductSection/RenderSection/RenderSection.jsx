@@ -1,5 +1,6 @@
 import React from 'react';
-import { RenderGrid } from './RenderGrid';
+import { RenderGrid } from '../RenderGrid/RenderGrid';
+import './RenderSection.scss';
 
 const RenderSec = ({ products }) => {
   const grids = RenderGrid({ products });

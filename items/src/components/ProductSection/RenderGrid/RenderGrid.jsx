@@ -1,5 +1,6 @@
 import React from 'react';
-import { Item } from './Item';
+import { Item } from '../ProductItem/ProductItem'
+import './RenderGrid.scss';
 
 const RenderGrid = ({ products }) => {
   let answer = [];

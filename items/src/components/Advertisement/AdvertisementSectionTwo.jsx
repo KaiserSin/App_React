@@ -1,6 +1,7 @@
-import LevelBlock from "./progress/LevelBlock"
+import LevelBlock from "../ProgressBar/LevelBlock";
+import './AdvertisementSectionTwo.scss';
 
-const AdSectionTwo = ({progress}) =>{
+const AdSectionTwo = ({progress}) => {
     return(
         <section id="adsec2" className="adsection2">
             <div id="adgrid" className="w-layout-grid adgrid">

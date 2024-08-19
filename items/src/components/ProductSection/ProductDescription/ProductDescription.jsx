@@ -1,3 +1,4 @@
+import './ProductDescription.scss';
 
 const Description = ({currentprice, oldprice, text}) =>{
     return(
