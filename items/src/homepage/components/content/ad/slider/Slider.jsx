@@ -25,27 +25,25 @@ export const Slider = () => {
   }, [slideNumber]);
 
   return (
-    <section className="adsection">
-      <div className="slider">
-        <Arrow className="arrow__left" onClick={handlePrev}>
-          
-        </Arrow>
-        <Arrow className="arrow__right" onClick={handleNext}>
-          
-        </Arrow>
-        <div className="slider__mask">
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`slide__item ${slide} ${
-                index === slideNumber ? "active" : ""
-              }`}
-            >
-              <a href="#" className="slider__link"></a>
-            </div>
-          ))}
-        </div>
+    <div className="slider">
+      <Arrow className="arrow__left" onClick={handlePrev}>
+        
+      </Arrow>
+      <Arrow className="arrow__right" onClick={handleNext}>
+        
+      </Arrow>
+      <div className="slider__mask">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slide__item ${slide} ${
+              index === slideNumber ? "active" : ""
+            }`}
+          >
+            <a href="#" className="slider__link"></a>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
