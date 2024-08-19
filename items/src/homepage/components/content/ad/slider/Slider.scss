@@ -43,6 +43,7 @@
   height: 100%;
   display: inline-block;
   position: relative;
+  transition: opacity 500ms;
 }
 .first {
   background-image: url("https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ad82f46f7c67ceef7e2380_Frame%201416.svg");
@@ -50,8 +51,7 @@
   background-size: cover;
   opacity: 0;
 }
-.first .active {
-  transform: translateX(100%);
+.first.active {
   opacity: 1;
 }
 .second {
