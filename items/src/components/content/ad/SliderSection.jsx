@@ -1,6 +1,6 @@
 import { Slider } from "./slider/Slider";
 
-export const AdSectionOne = () => {
+export const SliderSection = () => {
   return (
     <section className="adsection">
       <Slider />

@@ -1,15 +1,14 @@
 import { RenderSec } from "./product/RenderSec";
+import { SliderSection } from "./ad/SliderSection";
 import AdSectionTwo from "./ad/AdSectionTwo";
 import AdSectionThree from "./ad/AdSectionThree";
-import { Slider } from "./ad/slider/Slider";
-import { AdSectionOne } from "./ad/AddSectionOne";
 
 const Content = ({ products, progress }) => {
   const sections = RenderSec({ products });
   return (
     <div id="content" className="content">
       {sections[0]}
-      <AdSectionOne />
+      <SliderSection />
       {sections[1]}
       <AdSectionTwo progress={progress} />
       {sections[2]}
