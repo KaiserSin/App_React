@@ -27,27 +27,27 @@ function UpperHeader({
       </a>
       <div className="links">
         <a href={addressHref} className="address w-inline-block">
-          <img src={address} loading="lazy" alt="" class="image-13" width="146">
+          <img src={address} loading="lazy" alt="" className="image-13" width="146">
           </img>
         </a>
         <a href={jobHref} className="address w-inline-block">
-          <img src={job} loading="lazy" alt="" class="image-15" width="146">
+          <img src={job} loading="lazy" alt="" className="image-15" width="146">
           </img>
         </a>
         <a href={companyBuyHref} className="address w-inline-block">
-          <img src={companyBuy} loading="lazy" alt="" class="image-16" width="146">
+          <img src={companyBuy} loading="lazy" alt="" className="image-16" width="146">
           </img>
         </a>
         <a href={sellHref} className="address w-inline-block">
-          <img src={sell} loading="lazy" alt="" class="image-17" width="146">
+          <img src={sell} loading="lazy" alt="" className="image-17" width="146">
           </img>
         </a>
         <a href={pvsMapHref} className="address w-inline-block">
-          <img src={pvsMap} loading="lazy" alt="" class="image-18" width="146">
+          <img src={pvsMap} loading="lazy" alt="" className="image-18" width="146">
           </img>
         </a>
         <a href={pvsHref} className="address w-inline-block">
-          <img src={pvs} loading="lazy" alt="" class="image-19" width="146">
+          <img src={pvs} loading="lazy" alt="" className="image-19" width="146">
           </img>
         </a>
       </div>
