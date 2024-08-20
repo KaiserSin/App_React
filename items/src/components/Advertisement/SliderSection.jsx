@@ -1,4 +1,4 @@
-import { Slider } from "./slider/Slider";
+import { Slider } from "./Slider/Slider";
 
 export const SliderSection = () => {
   return (
