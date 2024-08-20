@@ -1,0 +1,43 @@
+
+.itemssection {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1600px;
+  
+    
+    @media screen and (max-width: 991px) {
+      max-width: 728px;
+    }
+  
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    @media screen and (max-width: 479px) {
+      padding: 10px;
+    }
+  }
+  
+  .itemsbg {
+    background-color: #005864;
+    padding: 20px;
+    border-radius: 10px;
+  
+    
+    @media screen and (max-width: 991px) {
+      padding: 15px;
+    }
+  
+    @media screen and (max-width: 767px) {
+      padding: 10px;
+    }
+  
+    @media screen and (max-width: 479px) {
+      padding: 5px;
+    }
+  }
+  
