@@ -1,0 +1,46 @@
+@import url(variables.scss);
+@import url(fonts.scss);
+
+/*формулы рассчета идеального пикселя для разных экранов */
+html {
+    font-size: 1px;
+
+    @media (min-width: var(--tablet-min)) {
+        font-size: calc(1vw / 7.68);
+    }
+
+    @media (min-width: var(--laptop-min)) {
+        font-size: calc(1vw / 16.80);
+    }
+
+    @media (min-width: 1680px) {
+        font-size: 1px;
+    }
+}
+
+body {
+    background-color: var(--backgrond-grey);
+}
+
+.main-container {
+    width: 1680rem;
+    padding: 30rem 40rem;
+    margin: 0 auto;
+}
+
+.centered-flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.centered-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

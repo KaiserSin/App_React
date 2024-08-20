@@ -1,0 +1,29 @@
+
+.level-block {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  min-height: 50px;
+  box-shadow: 0 2px 5px #0003;
+
+  &__link {
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: flex;
+  }
+
+}
+
+
+
+
+  
+  
+
+  

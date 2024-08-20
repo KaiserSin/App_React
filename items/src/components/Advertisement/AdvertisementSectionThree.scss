@@ -1,0 +1,27 @@
+.ad-section-three {
+    min-height: auto;
+    margin-top: auto;
+    margin-bottom: 15px;
+    padding: 0 20px;
+
+    &__link-block {
+        background-color: #fff;
+        background-image: url("https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ad987be76f472807b9302d_Frame%20147.svg");
+        background-position: 50%;
+        background-size: cover;
+        background-attachment: scroll;
+        border-radius: 20px;
+        max-width: 1600px;
+        min-height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+section {
+    display: block;
+}
+
+
+

@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from "react";
-import api from "../services/items";
-import Header from "../components/header/Header";
-import { Content } from "../components/content/Content";
-import Footer from "../components/footer/Footer";
+import api from "@/services/items";
+import Header from "@/components/Header/Header";
+import { Content } from "../../components/ProductSection/ContentStrip/Content";
+import Footer from "@/components/Footer/Footer";
+
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -34,17 +35,9 @@ const HomePage = () => {
         if ((counterRef.current + 1) * 10 >= sizeRef.current) {
           setIsMore(false);
         }
-        api
-          .getItems(
-            counterRef.current * 10,
-            Math.min((counterRef.current + 1) * 10, sizeRef.current)
-          )
-          .then((val) => {
-            setProducts((prevProducts) => [
-              ...prevProducts,
-              ...val.map((v) => ({ ...v, isFiltered: true })),
-            ]);
-          });
+        api.getItems(counterRef.current * 10, Math.min((counterRef.current + 1) * 10, sizeRef.current)).then((val) => {
+          setProducts((prevProducts) => [...prevProducts, ...val.map((v) => ({ ...v, isFiltered: true }))]);
+        });
         setCounter((prevCounter) => prevCounter + 1);
       }
     }
@@ -67,23 +60,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Header
-        languageCode="RU"
-        address="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075c7ff2b0a90938a285_Frame%2057.svg"
-        addressHref="https://www.google.com/search?q=Москва: Пушкина 10"
-        job="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075ccc7ace5df3decc38_Frame%2059.svg"
-        jobHref="#"
-        companyBuy="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075d91c10ccd8f33ab55_Frame%2060.svg"
-        companyBuyHref="#"
-        sell="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075d4268cdeb3e1b932b_Frame%2058.svg"
-        sellHref="#"
-        pvsMap="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac0942c38b3626c742bb6d_Frame%2062.svg"
-        pvsMapHref="#"
-        pvs="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac0959a3dcc14d67211117_Frame%2061.svg"
-        pvsHref="#"
-        catalogName="Каталог"
-        catalogHref="#"
-      />
+      <Header />
       <Content products={products} progress={progress} />
       <Footer />
     </>

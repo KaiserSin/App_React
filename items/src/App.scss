@@ -1,0 +1,12 @@
+@import "./assets/styles/reset.scss";
+@import "./assets/styles/fonts.scss";
+
+body {
+  font-family: "Jetbrainsmono";
+}
+
+[class*="__container"] {
+  max-width: 1640px;
+  padding-inline: 20px;
+  margin: 0 auto;
+}
