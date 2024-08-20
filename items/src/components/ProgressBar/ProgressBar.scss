@@ -1,59 +1,46 @@
-.w-layout-grid {
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: grid;
-}
-
+@import '../../assets/styles/fonts.scss';
 
 .progressgrid {
-  grid-column-gap: 9px;
-  grid-row-gap: 9px;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr;
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  gap: 9px; 
+  text-decoration: none;
+  font-family: 'Jetbrainsmono', sans-serif;
 }
-//  .grid-level {
-//   grid-area: span 1 / span 1 / span 1 / span 1;
-// }
-  
-  .level {
-    color: #8a8a8a;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  .progress-container {
-    width: 100%;
-    height: 10px;
-    background-color: #dcdcdc;
-    border-radius: 5px;
-    overflow: hidden;
-  }
 
-  .grid-level2 {
-    grid-area: span 1 / span 1 / span 1 / span 1;
-    place-self: center;
-    width: 80%;
-  }
-  
-  .progress-bar {
-    height: 100%;
-    
-    width: var(--pers, 0%);
-    background-color: #f0a500;
-    border-radius: 5px 0 0 5px;
-    transition: width 0.5s ease;
+.level {
+  color: #8a8a8a;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 10%; 
 }
-  
-  .leveld {
-    color: #8a8a8a;
-    font-size: 12px;
-  }
+
+.progress-container {
+  width: 80%; 
+  height: 10px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 10%; 
+}
+
+.progress-bar {
+  height: 100%;
+  width: var(--pers, 0%);
+  background-color: #f0a500;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.5s ease;
+}
+
+.leveld {
+  color: #8a8a8a;
+  font-size: 16px;
+  margin-left: 10%; 
+}
+
+
 
 
 
