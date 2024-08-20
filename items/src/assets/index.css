@@ -2154,7 +2154,7 @@ html {
   
 
   
-  .header {
+  /* .header {
     width: 100%;
     max-width: none;
     height: 130px;
@@ -2175,7 +2175,7 @@ html {
     padding: 5px 10px;
     display: flex;
     box-shadow: 0 2px 5px #0003;
-  }
+  } */
   
   .hblock2 {
     border-radius: 20px;
@@ -2192,7 +2192,7 @@ html {
     box-shadow: 0 2px 5px #0003;
   }
   
-  .button {
+  /* .button {
     color: #005864;
     background-color: #3898ec00;
     border: 1px solid #005864;
@@ -2205,7 +2205,7 @@ html {
     font-weight: 600;
     display: flex;
     box-shadow: 0 2px 5px #0003;
-  }
+  } */
   
   .image {
     border-radius: 10px;

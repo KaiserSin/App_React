@@ -1,73 +1,99 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 
-function UpperHeader({
-  languageCode,
-  address,
-  addressHref,
-  job,
-  jobHref,
-  companyBuy,
-  companyBuyHref,
-  sell,
-  sellHref,
-  pvsMap,
-  pvsMapHref,
-  pvs,
-  pvsHref,
-}) {
+import { Link } from "react-router-dom";
+
+function UpperHeader() {
+  const languageCode = "ru";
+
   return (
-    <header className="hblock1">
-      <a href="#" className="language w-inline-block">
-        <img
-          src={`https://flagsapi.com/${languageCode}/flat/64.png`}
-          loading="lazy"
-          width="28"
-          alt=""
-        />
-      </a>
-      <div className="links">
-        <a href={addressHref} className="address w-inline-block">
-          <img src={address} loading="lazy" alt="" className="image-13" width="146">
-          </img>
-        </a>
-        <a href={jobHref} className="address w-inline-block">
-          <img src={job} loading="lazy" alt="" className="image-15" width="146">
-          </img>
-        </a>
-        <a href={companyBuyHref} className="address w-inline-block">
-          <img src={companyBuy} loading="lazy" alt="" className="image-16" width="146">
-          </img>
-        </a>
-        <a href={sellHref} className="address w-inline-block">
-          <img src={sell} loading="lazy" alt="" className="image-17" width="146">
-          </img>
-        </a>
-        <a href={pvsMapHref} className="address w-inline-block">
-          <img src={pvsMap} loading="lazy" alt="" className="image-18" width="146">
-          </img>
-        </a>
-        <a href={pvsHref} className="address w-inline-block">
-          <img src={pvs} loading="lazy" alt="" className="image-19" width="146">
-          </img>
-        </a>
-      </div>
-      <a
-        data-w-id="e1d9bb1f-13be-a0bf-43fa-d9919f8ad4a1"
-        href="#"
-        className="theme w-inline-block"
-      >
-        <div data-w-id="e1d9bb1f-13be-a0bf-43fa-d9919f8ad4a2" className="tbtn">
-          <div className="bcircle">
+    <div className="upper-header">
+      <div className="upper-header__container">
+        <div className="upper-header__body">
+          <Link to={"/"} className="">
             <img
-              src="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66abb9ed01d209024e1aff31_sun%203.svg"
+              src={`https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ab9ca2f2ab9bcb545800d0_${languageCode}_flag%201.png`}
               loading="lazy"
-              width="13"
+              width="28"
               alt=""
             />
-          </div>
+          </Link>
+          <nav className="upper-header__links">
+            <Link to={"https://www.google.com/search?q=Москва: Пушкина 10"} className="">
+              <img
+                src={
+                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075c7ff2b0a90938a285_Frame%2057.svg"
+                }
+                loading="lazy"
+                alt=""
+                className="image-13"
+                width="146"></img>
+            </Link>
+            <Link to={"/"} className="">
+              <img
+                src={
+                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075ccc7ace5df3decc38_Frame%2059.svg"
+                }
+                loading="lazy"
+                alt=""
+                className="image-15"
+                width="146"></img>
+            </Link>
+            <Link to={"/"} className="">
+              <img
+                src={
+                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075d91c10ccd8f33ab55_Frame%2060.svg"
+                }
+                loading="lazy"
+                alt=""
+                className="image-16"
+                width="146"></img>
+            </Link>
+            <Link to={"/"} className="">
+              <img
+                src={
+                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075d4268cdeb3e1b932b_Frame%2058.svg"
+                }
+                loading="lazy"
+                alt=""
+                className="image-17"
+                width="146"></img>
+            </Link>
+            <Link to={"/"} className="">
+              <img
+                src={
+                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac0942c38b3626c742bb6d_Frame%2062.svg"
+                }
+                loading="lazy"
+                alt=""
+                className="image-18"
+                width="146"></img>
+            </Link>
+            <Link to={"/"} className="">
+              <img
+                src={
+                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac0959a3dcc14d67211117_Frame%2061.svg"
+                }
+                loading="lazy"
+                alt=""
+                className="image-19"
+                width="146"></img>
+            </Link>
+          </nav>
+          <button className="theme w-inline-block">
+            <div className="tbtn">
+              <div className="bcircle">
+                <img
+                  src="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66abb9ed01d209024e1aff31_sun%203.svg"
+                  loading="lazy"
+                  width="13"
+                  alt=""
+                />
+              </div>
+            </div>
+          </button>
         </div>
-      </a>
-    </header>
+      </div>
+    </div>
   );
 }
 
