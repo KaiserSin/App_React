@@ -1,15 +1,11 @@
-import HomePage from "./homepage/HomePage";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./App.scss";
+import { publicRoutes } from "./routes";
 
 const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </Router>
-  );
+  const router = createBrowserRouter(publicRoutes);
+
+  return <RouterProvider router={router} />;
 };
 
 export default App;
