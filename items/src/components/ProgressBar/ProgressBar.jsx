@@ -5,7 +5,7 @@ const ProgressBar = ({ progress }) => {
   return (
       <div className="progress-bar-block">
           <div className="progress-bar-block__level">Ваш уровень</div>
-          <div className="progress-bar-block__container">
+          <div className="progress-bar-block__wrapper">
               <div className="progress-bar-block__bar"></div>
           </div>
           <div className="progress-bar-block__description">
