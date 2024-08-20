@@ -8,7 +8,7 @@ import './Content.scss';
 const Content = ({products, progress}) => {
   const sections = RenderSec({products});
   return(
-  <div id='content' className='content'>
+  <div className='content'>
     {sections[0]}
     <AdSectionTwo progress={progress}/>
     {sections[1]}

@@ -2583,43 +2583,7 @@ html {
     border-radius: 8px;
     font-size: 30px;
   }
-  
-  .itemssection {
-    min-height: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 0 20px;
-  }
-  
-  .itemsgrid {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: minmax(200px, 220px);
-    grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px);
-    grid-auto-columns: auto;
-    grid-auto-flow: row;
-    place-items: stretch stretch;
-    width: auto;
-    max-width: 1600px;
-    height: auto;
-    min-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .card {
-    background-color: #fff;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80%;
-    margin-bottom: 15px;
-    display: flex;
-    overflow: clip;
-    box-shadow: 0 2px 5px #0003;
-  }
-  
+    
   .itemlink {
     border-radius: 15px;
     justify-content: center;
@@ -2629,59 +2593,10 @@ html {
     display: flex;
   }
   
-  .item {
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 100%;
-    height: 100%;
-    display: flex;
-  }
-  
-  .price {
-    color: #00d46e;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    min-height: 20px;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .currentprice {
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  .oldprice {
-    color: #858585;
-    letter-spacing: 1px;
-    margin-left: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: line-through;
-  }
-  
   .superscript {
     font-size: 12px;
   }
-  
-  .dtext {
-    letter-spacing: 1px;
-    margin-top: 10px;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  .text {
-    color: #171717;
-    text-decoration: none;
-  }
-  
-  
+    
   .downbtn {
     background-color: #e5e5e5a6;
     border-radius: 10px;
@@ -2729,19 +2644,7 @@ html {
     font-weight: 600;
     text-decoration: none;
   }
-  
-  .itemsbg {
-    background-color: #fff;
-    border-radius: 20px;
-    max-width: 1600px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    overflow: auto;
-  }
-  
-
+    
   .progress-container {
     width: 100%;
     height: 10px;
@@ -2750,56 +2653,6 @@ html {
     overflow: hidden;
 }
 
-  .itemsgrid2 {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: minmax(200px, 220px);
-    grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px);
-    grid-auto-columns: auto;
-    grid-auto-flow: row;
-    place-items: stretch stretch;
-    width: auto;
-    max-width: 1600px;
-    height: auto;
-    min-height: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .itemsgrid3 {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: minmax(200px, 220px);
-    grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px);
-    grid-auto-columns: auto;
-    grid-auto-flow: row;
-    place-items: stretch stretch;
-    width: auto;
-    max-width: 1600px;
-    height: auto;
-    min-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
-  }
-  
-  .itemsgrid4 {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: minmax(200px, 220px);
-    grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px);
-    grid-auto-columns: auto;
-    grid-auto-flow: row;
-    place-items: stretch stretch;
-    width: auto;
-    max-width: 1600px;
-    height: auto;
-    min-height: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
   
   .slide-3 {
     background-image: url("https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ad82f46f7c67ceef7e2380_Frame%201416.svg");
@@ -3008,23 +2861,7 @@ html {
       max-height: 200px;
       margin-bottom: 20px;
     }
-  
-    .itemsgrid {
-      grid-column-gap: 14px;
-      grid-row-gap: 14px;
-      grid-template-columns: minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px);
-      place-items: stretch stretch;
-      min-width: 270px;
-      max-width: 100%;
-      min-height: 230px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .card {
-      height: 60%;
-    }
-  
+
     .downbtn {
       display: flex;
     }
@@ -3182,33 +3019,6 @@ html {
       display: none;
     }
   
-    .itemsgrid3 {
-      grid-column-gap: 14px;
-      grid-row-gap: 14px;
-      grid-template-rows: minmax(200px, 220px);
-      grid-template-columns: minmax(155px, auto) minmax(155px, auto) minmax(155px, auto) minmax(155px, auto);
-      grid-auto-columns: auto;
-      place-items: stretch stretch;
-      min-width: auto;
-      max-width: 100%;
-      min-height: 230px;
-      margin-left: auto;
-      margin-right: auto;
-      display: grid;
-    }
-  
-    .itemsgrid4 {
-      grid-column-gap: 14px;
-      grid-row-gap: 14px;
-      grid-template-columns: minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px);
-      place-items: stretch stretch;
-      min-width: 270px;
-      max-width: 100%;
-      min-height: 230px;
-      margin-left: auto;
-      margin-right: auto;
-      display: none;
-    }
   
     .searchbar2 {
       border-style: solid;
@@ -3301,11 +3111,6 @@ html {
       box-shadow: 0 2px 5px #0003;
     }
   
-    .itemsgrid {
-      display: none;
-      overflow: auto;
-    }
-  
     .downbtn {
       z-index: 3;
       display: none;
@@ -3382,34 +3187,6 @@ html {
       overflow: auto;
     }
   
-    .itemsbg {
-      background-color: #f9f9f9;
-    }
-  
-    .itemsgrid2 {
-      display: none;
-      overflow: auto;
-    }
-  
-    .itemsgrid3 {
-      grid-column-gap: 14px;
-      grid-row-gap: 14px;
-      grid-template-rows: minmax(200px, 220px);
-      grid-template-columns: minmax(155px, auto) minmax(155px, auto) minmax(155px, auto) minmax(155px, auto);
-      grid-auto-columns: auto;
-      display: grid;
-      overflow: auto;
-    }
-  
-    .itemsgrid4 {
-      grid-column-gap: 14px;
-      grid-row-gap: 14px;
-      grid-template-rows: minmax(200px, 220px);
-      grid-template-columns: minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px);
-      grid-auto-columns: auto;
-      display: grid;
-      overflow: auto;
-    }
   
     .searchbar2 {
       border-style: none;
@@ -3435,11 +3212,6 @@ html {
       height: 100%;
       display: block;
       overflow: auto;
-    }
-  
-    .image-21, .image-22, .image-23, .image-24, .image-25, .image-26 {
-      width: 32px;
-      height: 32px;
     }
   
     .itemsbgmobile {

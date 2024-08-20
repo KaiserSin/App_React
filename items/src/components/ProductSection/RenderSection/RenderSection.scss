@@ -1,11 +1,9 @@
 
 .itemssection {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 1600px;
+  min-height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0 20px;
   
     
     @media screen and (max-width: 991px) {
@@ -23,9 +21,16 @@
   }
   
   .itemsbg {
-    background-color: #005864;
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 1600px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
-    border-radius: 10px;
+    overflow: auto;
+    background-color: #f9f9f9;
+  
   
     
     @media screen and (max-width: 991px) {
