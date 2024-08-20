@@ -2,7 +2,7 @@ import './Footer.scss'
 
 const Footer = () => {
     return (
-      <footer id="footer" className="footerblock">
+      <footer className="footerblock">
         <div className="footerbg"></div>
         <div className="footer">
           <div className="text-block">

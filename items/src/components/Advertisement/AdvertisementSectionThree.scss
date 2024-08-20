@@ -1,8 +1,6 @@
 .adsection3 {
     min-height: auto;
-    // max-height: 100px;
-    // margin-top: 15px;
-    margin-top: 100px;
+    margin-top: auto;
     margin-bottom: 15px;
     padding: 0 20px;
   
@@ -14,7 +12,7 @@
         background-attachment: scroll;
         border-radius: 20px;
         max-width: 1600px;
-        // min-height: 100px;
+        min-height: 80px;
         margin-left: auto;
         margin-right: auto;
         display: block;

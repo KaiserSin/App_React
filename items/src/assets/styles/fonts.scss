@@ -1,19 +1,91 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../font/Gilroy-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Gilroy-Light';
-    src: url('../font/Gilroy-Light.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Gilroy-SemiBold';
-    src: url('../font/Gilroy-SemiBold.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('../font/Gilroy-Bold.woff') format('woff');
-}
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f168ca9e3c778506d79_JetBrainsMono-SemiBold.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f168ca9e3c778506d79_JetBrainsMono-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f164b6b004f8908ad3e_JetBrainsMono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f158446f2cb66f540f1_JetBrainsMono-Bold.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f15e9916ec73a17bbd1_JetBrainsMono-ExtraBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f15ca242207e5542af8_JetBrainsMono-BoldItalic.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f1523edb45468317faa_JetBrainsMono-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f158941da25faa259c2_JetBrainsMono-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f150ee063c590513d5d_JetBrainsMono-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f15ffeec811d0140945_JetBrainsMono-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f16fe185b233ec61d20_JetBrainsMono-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f16fa737df04a687c97_JetBrainsMono-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f1631958e7acb6e9eab_JetBrainsMono-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f16062808e35e48e17d_JetBrainsMono-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f161ba5d5f04f7d7203_JetBrainsMono-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jetbrainsmono';
+    src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f160a331b406dc86b56_JetBrainsMono-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
