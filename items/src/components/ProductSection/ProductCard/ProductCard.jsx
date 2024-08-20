@@ -1,13 +1,20 @@
 import './ProductCard.scss';
 
-const Card = ({image_url}) => {
+
+const Card = ({ imageUrl }) => {
     return (
         <div className="card">
-            <a href="#" className="link-block-17 w-inline-block">
-                <img src={image_url} loading="lazy" width="126" alt="7078587423-201" className="image-21"/>
+            <a href="#" className="card__link">
+                <img 
+                    src={imageUrl} 
+                    loading="lazy" 
+                    alt="Card image" 
+                    className="card__image"
+                />
             </a>
         </div>
     );
-}
+};
 
-export {Card}
+export { Card };
+

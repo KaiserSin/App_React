@@ -1,13 +1,14 @@
 import LevelBlock from "../ProgressBar/LevelBlock";
 import './AdvertisementSectionTwo.scss';
 
-const AdSectionTwo = ({progress}) => {
-    return(
-        <section className="adsection2">
-            <div className="w-layout-grid adgrid">
-                <LevelBlock progress={progress}/>
-                <div className="adblock w-node-_991ac598-3910-cb12-c813-26163bb1414b-117db3f6">
-                    <a href="#" className="adlink2 w-inline-block"></a>
+
+const AdSectionTwo = ({ progress }) => {
+    return (
+        <section className="ad-section-two">
+            <div className="ad-section-two__grid">
+                <LevelBlock progress={progress} />
+                <div className="ad-section-two__block ad-section-two__block--custom">
+                    <a href="#" className="ad-section-two__link"></a>
                 </div>
             </div>
         </section>
@@ -15,3 +16,5 @@ const AdSectionTwo = ({progress}) => {
 }
 
 export default AdSectionTwo;
+
+

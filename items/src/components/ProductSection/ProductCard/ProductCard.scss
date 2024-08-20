@@ -7,15 +7,18 @@
   height: 80%;
   margin-bottom: 15px;
   display: flex;
-  overflow: clip;
+  overflow: hidden;
   box-shadow: 0 2px 5px #0003;
 }
-  
-  .w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-  }
-  .image-21 {
-    width: 32px;
-    height: 32px;
-  }
+
+.card__link {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.card__image {
+  width: 126px;
+  height: auto;
+}
+
+

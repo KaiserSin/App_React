@@ -1,12 +1,14 @@
-import './AdvertisementSectionThree.scss';
+ import './AdvertisementSectionThree.scss';
 
-
-const AdSectionThree = () => {
-    return(
-        <section className="adsection3">
-            <a href="#" className="link-block-30 w-inline-block"></a>
+ const AdSectionThree = () => {
+    return (
+        <section className="ad-section-three">
+            <a href="#" className="ad-section-three__link-block"></a>
         </section>
     );
 }
 
 export default AdSectionThree;
+
+
+

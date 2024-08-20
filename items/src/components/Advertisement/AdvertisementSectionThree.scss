@@ -1,10 +1,10 @@
-.adsection3 {
+.ad-section-three {
     min-height: auto;
     margin-top: auto;
     margin-bottom: 15px;
     padding: 0 20px;
-  
-    .link-block-30 {
+
+    &__link-block {
         background-color: #fff;
         background-image: url("https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ad987be76f472807b9302d_Frame%20147.svg");
         background-position: 50%;
@@ -17,9 +17,11 @@
         margin-right: auto;
         display: block;
     }
-
 }
+
 section {
     display: block;
-
 }
+
+
+

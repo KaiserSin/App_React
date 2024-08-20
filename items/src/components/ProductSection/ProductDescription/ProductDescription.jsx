@@ -1,19 +1,22 @@
 import './ProductDescription.scss';
 
-const Description = ({currentprice, oldprice, text}) =>{
-    return(
+
+const Description = ({ currentPrice, oldPrice, text }) => {
+    return (
         <div className="description">
-            <a href="#" className="price w-inline-block">
-                <div className="currentprice">{currentprice}</div>
-                <div className="oldprice">
-                    <sup>{oldprice}</sup>
+            <a href="#" className="description__price">
+                <div className="description__price-current">{currentPrice}</div>
+                <div className="description__price-old">
+                    <sup>{oldPrice}</sup>
                 </div>
             </a>
-            <a href="#" className="text w-inline-block">
-                <div className="dtext">{text}</div>
+            <a href="#" className="description__text">
+                <div className="description__text-content">{text}</div>
             </a>
         </div>
     );
 }
 
-export {Description}
+export { Description };
+
+
