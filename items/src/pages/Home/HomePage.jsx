@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import { Content } from "../../components/ProductSection/ContentStrip/Content";
 import Footer from "@/components/Footer/Footer";
 
+
 const HomePage = () => {
   const [products, setProducts] = useState([]);
   const [size, setSize] = useState(0);
