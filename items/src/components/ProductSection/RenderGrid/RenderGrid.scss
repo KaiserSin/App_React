@@ -1,154 +1,65 @@
+$grid-gap: 20px;
+$grid-column-min: 180px;
+$grid-column-max: 260px;
+$grid-row-min: 200px;
+$grid-row-max: 220px;
 
 .itemsgrid {
-    display: grid;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
+  display: grid;
+  grid-row-gap: $grid-gap;
+  grid-column-gap: $grid-gap;
+  grid-template-rows: minmax($grid-row-min, $grid-row-max);
+  grid-template-columns: repeat(6, minmax($grid-column-min, $grid-column-max));
+  grid-auto-flow: row;
+  place-items: stretch stretch;
+  max-width: 1600px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   
-    
-    @media screen and (max-width: 991px) {
-      grid-template-columns: 1fr;
-    }
-  
-    @media screen and (max-width: 767px) {
-      grid-template-columns: 1fr;
-    }
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
   }
 
-  .itemsgrid2 {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: minmax(200px, 220px);
-    grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px);
-    grid-auto-columns: auto;
-    grid-auto-flow: row;
-    place-items: stretch stretch;
-    width: auto;
-    max-width: 1600px;
-    height: auto;
-    min-height: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
   }
 
-  .itemsgrid3 {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: minmax(200px, 220px);
-    grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px);
-    grid-auto-columns: auto;
-    grid-auto-flow: row;
-    place-items: stretch stretch;
-    width: auto;
-    max-width: 1600px;
-    height: auto;
-    min-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
-  }
-
-
-  .itemsgrid4 {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: minmax(200px, 220px);
-    grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px);
-    grid-auto-columns: auto;
-    grid-auto-flow: row;
-    place-items: stretch stretch;
-    width: auto;
-    max-width: 1600px;
-    height: auto;
-    min-height: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  .itemsgrid {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: minmax(200px, 220px);
-    grid-template-columns: minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px) minmax(180px, 260px);
-    grid-auto-columns: auto;
-    grid-auto-flow: row;
-    place-items: stretch stretch;
-    width: auto;
-    max-width: 1600px;
-    height: auto;
-    min-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  .itemsgrid4 {
-    grid-column-gap: 14px;
-    grid-row-gap: 14px;
-    grid-template-columns: minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px);
-    place-items: stretch stretch;
-    min-width: 270px;
-    max-width: 100%;
-    min-height: 230px;
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
-  }
-  
-  .w-layout-grid {
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
-    grid-template-rows: auto auto;
-    grid-auto-columns: 1fr;
-    display: grid;
-  }
-  
-  .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 16px;
-    
-  
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-  
-    .item-price {
-      margin-top: 8px;
-      font-size: 16px;
-      font-weight: bold;
-  
-      &.old-price {
-        text-decoration: line-through;
-        color: #999;
-      }
-    }
-  
-    .item-description {
-      margin-top: 12px;
-      font-size: 14px;
-      color: #333;
-      text-align: center;
-    }
-  }
-  
-  
   @media screen and (max-width: 479px) {
-    .itemsgrid {
-      grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
   
-    .item {
-      padding: 12px;
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .item-price {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+
+    &.old-price {
+      text-decoration: line-through;
+      color: #999;
     }
   }
-  
+
+  .item-description {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+}
+
+
+
