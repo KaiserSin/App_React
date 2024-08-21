@@ -91,6 +91,20 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: 'JetBrainsMono-Medium';
+    src: url('../font/JetBrainsMono-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'JetBrainsMono-SemiBold';
+    src: url('../assets/font/JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
 
   
 

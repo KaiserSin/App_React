@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import api from "@/services/items";
 import Header from "@/components/Header/Header";
-import { Content } from "../../components/ProductSection/ContentStrip/Content";
+import  {Content}  from "../../components/ProductSection/ContentStrip/Content";
 import Footer from "@/components/Footer/Footer";
 
 
