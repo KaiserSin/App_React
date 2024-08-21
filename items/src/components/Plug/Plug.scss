@@ -1,0 +1,38 @@
+.placeholder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .placeholder-content {
+    text-align: center;
+  }
+  
+  .server-icon {
+    width: 100px; 
+    margin-bottom: 20px;
+  }
+  
+  .placeholder-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+  
