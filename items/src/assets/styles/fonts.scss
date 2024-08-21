@@ -82,6 +82,7 @@
     font-style: normal;
     font-display: swap;
   }
+
   @font-face {
     font-family: 'Jetbrainsmono';
     src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f160a331b406dc86b56_JetBrainsMono-ThinItalic.woff2') format('woff2');
@@ -89,3 +90,12 @@
     font-style: italic;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: "Montserrat-Montserrat-ExtraBold";
+    font-weight: 800; 
+    font-style: normal; 
+    src: url('https://github.com/JulietaUla/Montserrat/blob/master/fonts/webfonts/Montserrat-ExtraBold.woff2') format('woff2');
+  }
+  
+

@@ -51,20 +51,6 @@
     display: none;
   }
 
-  // .itemsgrid3 {
-  //   grid-column-gap: 14px;
-  //   grid-row-gap: 14px;
-  //   grid-template-rows: minmax(200px, 220px);
-  //   grid-template-columns: minmax(155px, auto) minmax(155px, auto) minmax(155px, auto) minmax(155px, auto);
-  //   grid-auto-columns: auto;
-  //   place-items: stretch stretch;
-  //   min-width: auto;
-  //   max-width: 100%;
-  //   min-height: 230px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   display: grid;
-  // }
 
   .itemsgrid4 {
     grid-column-gap: 20px;
@@ -83,17 +69,6 @@
     margin-right: auto;
   }
 
-  // .itemsgrid {
-  //   grid-column-gap: 14px;
-  //   grid-row-gap: 14px;
-  //   grid-template-columns: minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px);
-  //   place-items: stretch stretch;
-  //   min-width: 270px;
-  //   max-width: 100%;
-  //   min-height: 230px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
 
   .itemsgrid {
     grid-column-gap: 20px;
@@ -111,36 +86,6 @@
     margin-right: auto;
   }
 
-    
-  // .itemsgrid {
-  //   display: none;
-  //   overflow: auto;
-  // }
-
-  // .itemsgrid2 {
-  //   display: none;
-  //   overflow: auto;
-  // }
-
-  // .itemsgrid3 {
-  //   grid-column-gap: 14px;
-  //   grid-row-gap: 14px;
-  //   grid-template-rows: minmax(200px, 220px);
-  //   grid-template-columns: minmax(155px, auto) minmax(155px, auto) minmax(155px, auto) minmax(155px, auto);
-  //   grid-auto-columns: auto;
-  //   display: grid;
-  //   overflow: auto;
-  // }
-
-  // .itemsgrid4 {
-  //   grid-column-gap: 14px;
-  //   grid-row-gap: 14px;
-  //   grid-template-rows: minmax(200px, 220px);
-  //   grid-template-columns: minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px) minmax(155px, 230px);
-  //   grid-auto-columns: auto;
-  //   display: grid;
-  //   overflow: auto;
-  // }
 
   .itemsgrid4 {
     grid-column-gap: 14px;
@@ -168,10 +113,9 @@
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
   
     img {
       max-width: 100%;
