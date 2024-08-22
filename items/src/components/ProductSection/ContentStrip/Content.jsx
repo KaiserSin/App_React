@@ -1,4 +1,4 @@
-// import { RenderSec } from "./product/RenderSec";
+import React from 'react';
 import { RenderSec } from "../RenderSection/RenderSection.jsx";
 import AdSectionTwo from "../../Advertisement/AdvertisementSectionTwo";
 import AdSectionThree from "../../Advertisement/AdvertisementSectionThree";
@@ -9,22 +9,13 @@ import { useDisplayProfile } from "../../../context/ProfileContext.jsx";
 
 const Content = ({ products, progress }) => {
   const sections = RenderSec({ products });
-
-  const { showProfile } = useDisplayProfile();
-
   return (
     <div className="content">
-      {showProfile ? (
-        <Profile />
-      ) : (
-        <>
-          <SliderSection />
-          {sections[0]}
-          <AdSectionTwo progress={progress} />
-          {sections[1]}
-          <AdSectionThree />
-        </>
-      )}
+      <SliderSection />
+      {sections[0]}
+      <AdSectionTwo progress={progress} />
+      {sections[1]}
+      <AdSectionThree />
       {sections[2]}
     </div>
   );

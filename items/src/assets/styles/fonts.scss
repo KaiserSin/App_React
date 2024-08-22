@@ -92,10 +92,16 @@
   }
 
   @font-face {
-    font-family: "Montserrat-Montserrat-ExtraBold";
-    font-weight: 800; 
-    font-style: normal; 
-    src: url('https://github.com/JulietaUla/Montserrat/blob/master/fonts/webfonts/Montserrat-ExtraBold.woff2') format('woff2');
+    font-family: 'JetBrainsMono-Medium';
+    src: url('../../assets/font/JetBrainsMono-Medium.woff2') format('woff2');
+    font-display: swap;
   }
+  
+  @font-face {
+    font-family: 'JetBrainsMono-SemiBold';
+    src: url('../../assets/font/JetBrainsMono-SemiBold.woff2') format('woff2');
+  }
+
+
   
 
