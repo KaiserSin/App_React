@@ -53,11 +53,13 @@ const HomePage = () => {
     };
   }, []);
 
+  const [show, setShow] = useState(false)
+  
   return (
     
     <>
-      <Header />
-      <Content products={products} progress={progress} />
+      <Header setShow={setShow} show={show}/>
+      <Content products={products} progress={progress} show={show}/>
       <Footer />
     </>
   );
