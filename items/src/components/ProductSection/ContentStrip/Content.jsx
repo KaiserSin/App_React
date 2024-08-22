@@ -11,7 +11,6 @@ const Content = ({ products, progress }) => {
   const sections = RenderSec({ products });
 
   const { showProfile } = useDisplayProfile();
-  console.log(showProfile);
 
   return (
     <div className="content">

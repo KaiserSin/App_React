@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useContext, useState, DisplayContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 const DisplayProfileContext = createContext();
 
