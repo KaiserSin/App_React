@@ -1,16 +1,21 @@
 import { userInfo } from "../Constants/User-info";
+
+import "./User.scss";
+
 export const User = () => {
   return (
-    <div>
-      <img src="/profile-images/user.png" alt="" className="profile__images" />
-      <div>
-        <div>
+    <div className="user">
+      <div className="profile__images">
+        <img src="/profile-images/user.png" alt="" />
+      </div>
+      <div className="user__info">
+        <div className="user__info-title">
           <h2>Учетные данные</h2>
           <p>
-            Здесь вы можете редактировать свои данные Swift ID и управлять
-            аккаунтом.
+            Здесь вы можете редактировать свои данные Swift ID<br></br> и
+            управлять аккаунтом.
           </p>
-          <div>
+          <div className="user__info-blocks">
             <div className="user__info-block">
               <h3>ФИО</h3>
               <span>
@@ -19,20 +24,39 @@ export const User = () => {
               <button className="change__button">Изменить</button>
             </div>
             <div className="user__info-block">
+              <h3>Дата рождения</h3>
               <span>{userInfo.dateOfBirth}</span>
               <button className="change__button">Изменить</button>
             </div>
             <div className="user__info-block">
+              <h3>Пол</h3>
               <span>{userInfo.sex}</span>
               <button className="change__button">Изменить</button>
             </div>
             <div className="user__info-block">
-              <span>{userInfo.email}</span>
+              <h3>Почта</h3>
+              <div className="email__info">
+                <span>{userInfo.email}</span>
+                {userInfo.isConfirm ? (
+                  <div className="email__confirm">
+                    <img src="" alt="" />
+                    <span>✅ Почта подтверждена</span>
+                  </div>
+                ) : (
+                  ""
+                )}
+              </div>
               <button className="change__button">Изменить</button>
             </div>
           </div>
         </div>
-        <div></div>
+        <div>
+          <h2>Безопасность </h2>
+          <p>
+            Управляйте настройками двухфакторной <br />
+            аутентификации, активными сессиями и паролем.
+          </p>
+        </div>
       </div>
     </div>
   );
