@@ -1,22 +1,13 @@
 import LowerHeader from "./LowerHeader";
 import UpperHeader from "./UpperHeader";
 import "./Header.scss";
-import { useContext, useState } from "react";
+import { useState } from "react";
 
-function Header({ onChange }) {
-  const [showCatalog, setShowCatalog] = useState('')
-
-  const  handleCatalogToggle = (show) => {
-    setShowCatalog(show)
-    onChange(showCatalog)
-  }
-
-
-
+function Header({ setShow, show }) {
   return (
     <header id="header" className="header">
       <UpperHeader />
-      <LowerHeader onChange={handleCatalogToggle}/>
+      <LowerHeader setShow={setShow} show={show}/>
     </header>
   );
 }

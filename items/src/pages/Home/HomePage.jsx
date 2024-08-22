@@ -58,14 +58,11 @@ const HomePage = () => {
     };
   }, []);
 
-  const [show, setShow] = useState('')
-  const handleToggleCatalog = (show) => {
-    setShow(show)
-  }
-
+  const [show, setShow] = useState(false)
+  
   return (
     <>
-      <Header onChange={handleToggleCatalog}/>
+      <Header setShow={setShow} show={show}/>
       <Content products={products} progress={progress} show={show}/>
       <Footer />
     </>

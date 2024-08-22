@@ -5,7 +5,6 @@ import AdSectionThree from "../../Advertisement/AdvertisementSectionThree";
 import './Content.scss';
 import { Catalog } from "../../Catalog/Catalog.jsx"
 import { SliderSection } from "../../Advertisement/SliderSection.jsx";
-import { useState } from "react";
 
 
 const Content = ({products, progress, show}) => {

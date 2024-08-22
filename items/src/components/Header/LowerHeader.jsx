@@ -4,12 +4,12 @@ import Button from "@/shared/components/Buttons/Button/Button";
 import Logo from "@/shared/components/Logo/Logo";
 import { useState } from "react";
 
-function LowerHeader({ onChange }) {
-  const [showCatalog, setShowCatalog] = useState(false)
+function LowerHeader({ setShow, show }) {
+  
   const toggleCatalog = () => {
-    showCatalog ? setShowCatalog(false) : setShowCatalog(true)
-    onChange(showCatalog)
+    setShow(!show)
   }
+
   return (
     <div className="lower-header">
       <div className="lower-header__container">
