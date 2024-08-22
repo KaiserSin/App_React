@@ -5,6 +5,7 @@ import Logo from "@/shared/components/Logo/Logo";
 import IconWithNotification from "@/shared/components/IconWithNotification/IconWithNotification";
 
 function LowerHeader() {
+  const { toggleProfile } = useDisplayProfile();
   return (
     <div className="lower-header">
       <div className="lower-header__container">
