@@ -8,7 +8,7 @@
   &__container {
   }
   &__body {
-    padding: 5px 10px;
+    padding: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,6 +21,25 @@
     align-items: center;
     gap: 10px;
   }
+
+  &__language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+  }
+
+  &__link-text {
+    text-transform: uppercase;
+    color: rgba(131, 131, 131, 1);
+  }
 }
 
 .lower-header {
@@ -31,6 +50,8 @@
   }
 
   &__link {
+    width: 27px;
+    aspect-ratio: 1;
   }
 
   &__body {
@@ -38,8 +59,8 @@
     align-items: center;
     border-radius: 20px;
     margin-top: 12px;
-    padding: 10px;
+    padding: 10px 20px 10px 10px;
     box-shadow: 0 2px 5px #0003;
-    gap: 10px;
+    gap: 20px;
   }
 }

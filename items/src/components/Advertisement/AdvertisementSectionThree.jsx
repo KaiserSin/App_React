@@ -1,14 +1,17 @@
- import './AdvertisementSectionThree.scss';
+import { Link } from 'react-router-dom';
+import './AdvertisementSectionThree.scss';
 
- const AdSectionThree = () => {
+const AdSectionThree = () => {
     return (
         <section className="ad-section-three">
-            <a href="#" className="ad-section-three__link-block"></a>
+            <Link to="/inactive-link" className="ad-section-three__link-block"></Link>
         </section>
     );
 }
 
 export default AdSectionThree;
+
+
 
 
 

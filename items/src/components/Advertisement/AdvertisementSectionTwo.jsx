@@ -1,6 +1,6 @@
 import LevelBlock from "../ProgressBar/LevelBlock";
 import './AdvertisementSectionTwo.scss';
-
+import { Link } from 'react-router-dom';
 
 const AdSectionTwo = ({ progress }) => {
     return (
@@ -8,7 +8,7 @@ const AdSectionTwo = ({ progress }) => {
             <div className="ad-section-two__grid">
                 <LevelBlock progress={progress} />
                 <div className="ad-section-two__block ad-section-two__block--custom">
-                    <a href="#" className="ad-section-two__link"></a>
+                    <Link to="/inactive-link" className="ad-section-two__link"></Link>
                 </div>
             </div>
         </section>
@@ -16,5 +16,7 @@ const AdSectionTwo = ({ progress }) => {
 }
 
 export default AdSectionTwo;
+
+
 
 

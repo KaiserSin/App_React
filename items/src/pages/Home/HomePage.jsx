@@ -1,9 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import api from "@/services/items";
 import Header from "@/components/Header/Header";
-import { Content } from "../../components/ProductSection/ContentStrip/Content";
+import  {Content}  from "../../components/ProductSection/ContentStrip/Content";
 import Footer from "@/components/Footer/Footer";
-
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -14,7 +13,6 @@ const HomePage = () => {
 
   const sizeRef = useRef(size);
   const counterRef = useRef(counter);
-  const isMoreRef = useRef(isMore);
 
   useEffect(() => {
     sizeRef.current = size;
@@ -24,14 +22,11 @@ const HomePage = () => {
     counterRef.current = counter;
   }, [counter]);
 
-  useEffect(() => {
-    isMoreRef.current = isMore;
-  }, [isMore]);
-
   const handleScroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
       console.log("Вы достигли конца страницы!");
-      if (isMoreRef.current) {
+      if (isMore) {
+        
         if ((counterRef.current + 1) * 10 >= sizeRef.current) {
           setIsMore(false);
         }
@@ -41,13 +36,13 @@ const HomePage = () => {
         setCounter((prevCounter) => prevCounter + 1);
       }
     }
-  };
+  } ;
+
 
   useEffect(() => {
     const fetchData = async () => {
       const sizeData = await api.getSize();
-      console.log("Fetched size:", sizeData.size);
-      setSize(sizeData.size);
+      setSize(sizeData);
       const items = await api.getItems(0, 30);
       setProducts(items.map((val) => ({ ...val, isFiltered: true })));
     };
@@ -61,6 +56,7 @@ const HomePage = () => {
   const [show, setShow] = useState(false)
   
   return (
+    
     <>
       <Header setShow={setShow} show={show}/>
       <Content products={products} progress={progress} show={show}/>

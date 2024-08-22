@@ -82,6 +82,7 @@
     font-style: normal;
     font-display: swap;
   }
+
   @font-face {
     font-family: 'Jetbrainsmono';
     src: url('https://uploads-ssl.webflow.com/66ab7b46556019f9117db3ca/66ab7f160a331b406dc86b56_JetBrainsMono-ThinItalic.woff2') format('woff2');
@@ -89,3 +90,18 @@
     font-style: italic;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'JetBrainsMono-Medium';
+    src: url('../../assets/font/JetBrainsMono-Medium.woff2') format('woff2');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrainsMono-SemiBold';
+    src: url('../../assets/font/JetBrainsMono-SemiBold.woff2') format('woff2');
+  }
+
+
+  
+
