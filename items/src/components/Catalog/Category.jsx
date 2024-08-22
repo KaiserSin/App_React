@@ -3,6 +3,7 @@ import './Catalog.scss'
 export function Category ({id, name, imageUrl, subcategories: []}){
     
     const handleClickCategory = () => {
+        
         console.log('clicked category ' + name)
     }
 
