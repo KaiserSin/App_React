@@ -3,7 +3,7 @@ import api from "@/services/items";
 import Header from "@/components/Header/Header";
 import { Content } from "../../components/ProductSection/ContentStrip/Content";
 import Footer from "@/components/Footer/Footer";
-
+import { Profile } from "../../components/Profile/Profile";
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -35,9 +35,17 @@ const HomePage = () => {
         if ((counterRef.current + 1) * 10 >= sizeRef.current) {
           setIsMore(false);
         }
-        api.getItems(counterRef.current * 10, Math.min((counterRef.current + 1) * 10, sizeRef.current)).then((val) => {
-          setProducts((prevProducts) => [...prevProducts, ...val.map((v) => ({ ...v, isFiltered: true }))]);
-        });
+        api
+          .getItems(
+            counterRef.current * 10,
+            Math.min((counterRef.current + 1) * 10, sizeRef.current)
+          )
+          .then((val) => {
+            setProducts((prevProducts) => [
+              ...prevProducts,
+              ...val.map((v) => ({ ...v, isFiltered: true })),
+            ]);
+          });
         setCounter((prevCounter) => prevCounter + 1);
       }
     }
@@ -61,6 +69,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
+      <Profile />
       <Content products={products} progress={progress} />
       <Footer />
     </>
