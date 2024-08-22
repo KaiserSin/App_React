@@ -3,7 +3,6 @@ import api from "@/services/items";
 import Header from "@/components/Header/Header";
 import { Content } from "../../components/ProductSection/ContentStrip/Content";
 import Footer from "@/components/Footer/Footer";
-import { Profile } from "../../components/Profile/Profile";
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -69,7 +68,6 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <Profile />
       <Content products={products} progress={progress} />
       <Footer />
     </>
