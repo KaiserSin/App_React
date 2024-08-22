@@ -12,6 +12,7 @@ const getItems = (first, second) => {
     return request.then(response => response.data);
 }
 
+
 const getSize = () => {
     const request = axios.get(`${baseUrl}/getGoodsCount`); 
     return request.then(response => response.data);

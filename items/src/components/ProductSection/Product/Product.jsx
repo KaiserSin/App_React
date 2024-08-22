@@ -1,6 +1,7 @@
 import './Product.scss';
 import {v4 as uuidv4} from 'uuid'
 
+
 const Product = ({ id, imageUrl, currentPrice, oldPrice, text }) => {
     return (
         <div id={id} className="product">
@@ -30,3 +31,5 @@ const Product = ({ id, imageUrl, currentPrice, oldPrice, text }) => {
 };
 
 export { Product };
+
+

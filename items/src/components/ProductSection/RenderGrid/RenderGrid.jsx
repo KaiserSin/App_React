@@ -2,6 +2,7 @@ import React from 'react';
 import { Product } from '../Product/Product';
 import './RenderGrid.scss';
 
+
 const RenderGrid = ({ products }) => {
   const rows = products.reduce((acc, product, index) => {
     const gridIndex = Math.floor(index / 6);
@@ -10,10 +11,10 @@ const RenderGrid = ({ products }) => {
       <Product
         key={product.id}
         id={product.id}
-        imageUrl={product.image_url}
-        currentPrice={product.currentprice}
-        oldPrice={product.oldprice}
-        text={product.text}
+        imageUrl={product.imageUrl} 
+        currentPrice={product.cost} 
+        oldPrice={product.oldCost} 
+        text={product.name} 
       />
     );
     return acc;
@@ -29,6 +30,8 @@ const RenderGrid = ({ products }) => {
   ));
 };
 
-export { RenderGrid };
+export { RenderGrid }
+
+
 
 
