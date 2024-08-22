@@ -1,12 +1,10 @@
-import Menu from "./Menu";
+import { Menu } from "./Menu.jsx";
 import './Catalog.scss'
 
-function Catalog() {
+export function Catalog() {
     return(
         <section className="catalogpc">
             <Menu/>
         </section>
     )
 }
-
-export default Catalog;

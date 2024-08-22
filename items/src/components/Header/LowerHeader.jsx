@@ -2,14 +2,20 @@ import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import Button from "@/shared/components/Buttons/Button/Button";
 import Logo from "@/shared/components/Logo/Logo";
+import { useState } from "react";
 
-function LowerHeader() {
+function LowerHeader({ onChange }) {
+  const [showCatalog, setShowCatalog] = useState(false)
+  const toggleCatalog = () => {
+    showCatalog ? setShowCatalog(false) : setShowCatalog(true)
+    onChange(showCatalog)
+  }
   return (
     <div className="lower-header">
       <div className="lower-header__container">
         <div className="lower-header__body">
           <Logo />
-          <Button>Каталог</Button>
+          <Button onClick={toggleCatalog}>Каталог</Button>
           <SearchBar placeholder="Найдется все" categoryDropDown="Категория" categories={["1", "2", "3"]} />
           <nav className="lower-header__links">
             <Link to={"/"} className="lower-header__link">

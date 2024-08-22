@@ -1,6 +1,6 @@
 import './Catalog.scss'
 
-function Category ({id, name, imageUrl, subcategories}){
+export function Category ({id, name, imageUrl, subcategories}){
     return(
         <li id={id} className="list-item-idle">
             <a className="link-block-31" href="#">
@@ -12,5 +12,3 @@ function Category ({id, name, imageUrl, subcategories}){
         </li>
     )
 }
-
-export default Category;

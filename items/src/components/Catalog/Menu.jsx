@@ -1,7 +1,7 @@
-import Category from "./Category";
-import "./catalog.scss"
+import { Category } from "./Category.jsx";
+import "./Catalog.scss"
 
-function Menu() {
+export function Menu() {
     const catalogData = []
     const categories = [
         {
@@ -84,5 +84,3 @@ function Menu() {
         </div>
     )
 }
-
-export default Menu;
