@@ -7,7 +7,7 @@ const App = () => {
   const router = createBrowserRouter(publicRoutes);
   return (
     <DisplayProfileProvider>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </DisplayProfileProvider>
   );
 };
