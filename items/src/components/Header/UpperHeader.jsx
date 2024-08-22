@@ -9,74 +9,36 @@ function UpperHeader() {
     <div className="upper-header">
       <div className="upper-header__container">
         <div className="upper-header__body">
-          <Link to={"/"} className="">
+          <div to={"/"} className="upper-header__language">
             <img
               src={`https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ab9ca2f2ab9bcb545800d0_${languageCode}_flag%201.png`}
               loading="lazy"
               width="28"
               alt=""
             />
-          </Link>
+            <span className="upper-header__link-text">{languageCode}</span>
+          </div>
           <nav className="upper-header__links">
-            <Link to={"https://www.google.com/search?q=Москва: Пушкина 10"} className="">
-              <img
-                src={
-                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075c7ff2b0a90938a285_Frame%2057.svg"
-                }
-                loading="lazy"
-                alt=""
-                className="image-13"
-                width="146"></img>
+            <Link to={"https://www.google.com/search?q=Москва: Пушкина 10"} className="upper-header__link">
+              🏠 Москва: Пушкина 10
             </Link>
-            <Link to={"/"} className="">
-              <img
-                src={
-                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075ccc7ace5df3decc38_Frame%2059.svg"
-                }
-                loading="lazy"
-                alt=""
-                className="image-15"
-                width="146"></img>
+            <Link to={"/"} className="upper-header__link">
+              ❤️ Продавайте у нас
             </Link>
-            <Link to={"/"} className="">
-              <img
-                src={
-                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075d91c10ccd8f33ab55_Frame%2060.svg"
-                }
-                loading="lazy"
-                alt=""
-                className="image-16"
-                width="146"></img>
+            <Link to={"/"} className="upper-header__link">
+              💼 Наши вакансии
             </Link>
-            <Link to={"/"} className="">
-              <img
-                src={
-                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac075d4268cdeb3e1b932b_Frame%2058.svg"
-                }
-                loading="lazy"
-                alt=""
-                className="image-17"
-                width="146"></img>
+            <Link to={"/"} className="upper-header__link">
+              🏢 Покупать как компания
             </Link>
-            <Link to={"/"} className="">
-              <img
-                src={
-                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac0942c38b3626c742bb6d_Frame%2062.svg"
-                }
-                loading="lazy"
-                alt=""
-                className="image-18"
-                width="146"></img>
+            <Link to={"/"} className="upper-header__link">
+              🔥 Франшиза
             </Link>
-            <Link to={"/"} className="">
-              <img
-                src={
-                  "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac0959a3dcc14d67211117_Frame%2061.svg"
-                }
-                loading="lazy"
-                alt=""
-                className="image-19"
-                width="146"></img>
+            <Link to={"/"} className="upper-header__link">
+              📍 Пункты выдачи
+            </Link>
+            <Link to={"/"} className="upper-header__link">
+              🛟 Поддержка
             </Link>
           </nav>
           <button className="theme w-inline-block">
