@@ -4,9 +4,6 @@ import AdSectionTwo from "../../Advertisement/AdvertisementSectionTwo";
 import AdSectionThree from "../../Advertisement/AdvertisementSectionThree";
 import './Content.scss';
 import { SliderSection } from "../../Advertisement/SliderSection.jsx";
-import { Link } from 'react-router-dom';
-
-
 
 const Content = ({ products, progress }) => {
   const sections = RenderSec({ products });
@@ -15,17 +12,15 @@ const Content = ({ products, progress }) => {
     <div className="content">
       <SliderSection />
       {sections[0]}
-      <Link to="/inactive-link">
-        <AdSectionTwo progress={progress} />
-      </Link>
+      <AdSectionTwo progress={progress} />
       {sections[1]}
-      <Link to="/inactive-link">
-        <AdSectionThree />
-      </Link>
+      <AdSectionThree />
       {sections[2]}
     </div>
   );
 };
 
-export  {Content};
+export { Content };
+
+
 

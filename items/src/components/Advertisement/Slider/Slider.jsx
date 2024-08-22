@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-
 import { Arrow } from "./Arrow/Arrow.jsx";
-
-import "./Slider.scss";
-
 import { Link } from 'react-router-dom';
+import "./Slider.scss";
 
 const SLIDER_INTERVAL_TIME = 5000;
 
@@ -42,12 +39,13 @@ export const Slider = () => {
               index === slideNumber ? "active" : ""
             }`}
           >
-            <Link to="/inactive-link" className="slider__link">
-            <a href="#" className="slider__link"></a>
-            </Link>
+            <Link to="/inactive-link" className="slider__link"></Link>
           </div>
         ))}
       </div>
     </div>
   );
 };
+
+
+
