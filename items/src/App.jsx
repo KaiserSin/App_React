@@ -1,20 +1,17 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.scss";
 import { publicRoutes } from "./routes";
-import { DisplayProfileProvider } from "./context/ProfileContext";
+
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 const App = () => {
   const router = createBrowserRouter(publicRoutes);
   return (
-    <DisplayProfileProvider>
+    <Provider store={store}>
       <RouterProvider router={router} />
-    </DisplayProfileProvider>
+    </Provider>
   );
 };
 
 export default App;
-
-
-
-
-

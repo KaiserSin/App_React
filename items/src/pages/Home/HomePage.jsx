@@ -1,8 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 import api from "@/services/items";
 import Header from "@/components/Header/Header";
-import  {Content}  from "../../components/ProductSection/ContentStrip/Content";
+import { Content } from "../../components/ProductSection/ContentStrip/Content";
 import Footer from "@/components/Footer/Footer";
+import { Catalog } from "../../components/Catalog/Catalog";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -22,23 +24,6 @@ const HomePage = () => {
     counterRef.current = counter;
   }, [counter]);
 
-  const handleScroll = () => {
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-      console.log("Вы достигли конца страницы!");
-      if (isMore) {
-        
-        if ((counterRef.current + 1) * 10 >= sizeRef.current) {
-          setIsMore(false);
-        }
-        api.getItems(counterRef.current * 10, Math.min((counterRef.current + 1) * 10, sizeRef.current)).then((val) => {
-          setProducts((prevProducts) => [...prevProducts, ...val.map((v) => ({ ...v, isFiltered: true }))]);
-        });
-        setCounter((prevCounter) => prevCounter + 1);
-      }
-    }
-  } ;
-
-
   useEffect(() => {
     const fetchData = async () => {
       const sizeData = await api.getSize();
@@ -53,16 +38,22 @@ const HomePage = () => {
     };
   }, []);
 
-  const [show, setShow] = useState(false)
-  
-  return (
-    
-    <>
-      <Header setShow={setShow} show={show}/>
-      <Content products={products} progress={progress} show={show}/>
-      <Footer />
-    </>
-  );
+  const handleScroll = () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      console.log("Вы достигли конца страницы!");
+      if (isMore) {
+        if ((counterRef.current + 1) * 10 >= sizeRef.current) {
+          setIsMore(false);
+        }
+        api.getItems(counterRef.current * 10, Math.min((counterRef.current + 1) * 10, sizeRef.current)).then((val) => {
+          setProducts((prevProducts) => [...prevProducts, ...val.map((v) => ({ ...v, isFiltered: true }))]);
+        });
+        setCounter((prevCounter) => prevCounter + 1);
+      }
+    }
+  };
+
+  return <Content products={products} progress={progress} />;
 };
 
 export default HomePage;

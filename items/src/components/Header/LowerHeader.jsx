@@ -1,16 +1,22 @@
-import { Link } from "react-router-dom";
-import SearchBar from "../SearchBar/SearchBar";
 import Button from "@/shared/components/Buttons/Button/Button";
-import Logo from "@/shared/components/Logo/Logo";
-import { useState } from "react";
 import IconWithNotification from "@/shared/components/IconWithNotification/IconWithNotification";
+import Logo from "@/shared/components/Logo/Logo";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { setCatalogVisible } from "../../redux/reducers/catalogSlice";
+import SearchBar from "../SearchBar/SearchBar";
 
-function LowerHeader({ setShow, show }) {
-  
+function LowerHeader() {
+  const { isCatalogVisible } = useSelector((state) => {
+    return state.catalog;
+  });
+
+  const dispatch = useDispatch();
+
   const toggleCatalog = () => {
-    setShow(!show)
-  }
-  
+    dispatch(setCatalogVisible(!isCatalogVisible));
+  };
+
   return (
     <div className="lower-header">
       <div className="lower-header__container">
@@ -19,7 +25,7 @@ function LowerHeader({ setShow, show }) {
           <Button onClick={toggleCatalog}>Каталог</Button>
           <SearchBar placeholder="Найдется все" dropDownLabel="Категория" dropDownItems={["1", "2", "3"]} />
           <nav className="lower-header__links">
-            <Link to={"/"} className="lower-header__link">
+            <Link to={"/profile"} className="lower-header__link">
               <IconWithNotification src="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac1098361c5745701358eb_Group%205-3.svg" />
             </Link>
             <Link to={"/"} className="lower-header__link">
