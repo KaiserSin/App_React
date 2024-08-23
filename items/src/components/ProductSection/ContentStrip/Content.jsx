@@ -7,6 +7,7 @@ import { Catalog } from "../../Catalog/Catalog.jsx"
 import { SliderSection } from "../../Advertisement/SliderSection.jsx";
 import { Profile } from "../../Profile/Profile.jsx";
 import { useDisplayProfile } from "../../../context/ProfileContext.jsx";
+import ScrollToBottom from '../../ScrollToBottom/ScrollToBottom.jsx';
 
 const Content = ({products, progress, show}) => {
   const sections = RenderSec({products});
@@ -25,6 +26,7 @@ const Content = ({products, progress, show}) => {
         {sections[1]}
         <AdSectionThree/>
         {sections[2]}
+        <ScrollToBottom />
       </div>
     );
   }

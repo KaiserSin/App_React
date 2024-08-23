@@ -1,15 +1,21 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
-
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Moon from '../../assets/images/nightMode/moon.svg';
 
 function UpperHeader() {
+  const [isNightMode, setIsNightMode] = useState(false);
   const languageCode = "ru";
+
+  const toggleTheme = () => {
+    setIsNightMode(!isNightMode);
+  };
 
   return (
     <div className="upper-header">
       <div className="upper-header__container">
         <div className="upper-header__body">
-          <div to={"/"} className="upper-header__language">
+          <div className="upper-header__language">
             <img
               src={`https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ab9ca2f2ab9bcb545800d0_${languageCode}_flag%201.png`}
               loading="lazy"
@@ -41,14 +47,16 @@ function UpperHeader() {
               🛟 Поддержка
             </Link>
           </nav>
-          <button className="theme w-inline-block">
-            <div className="tbtn">
+          <button className="theme w-inline-block" onClick={toggleTheme}>
+            <div className={`tbtn ${isNightMode ? "night" : "day"}`}>
               <div className="bcircle">
                 <img
-                  src="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66abb9ed01d209024e1aff31_sun%203.svg"
+                  src={isNightMode 
+                    ? Moon 
+                    : "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66abb9ed01d209024e1aff31_sun%203.svg"}
                   loading="lazy"
                   width="13"
-                  alt=""
+                  alt={isNightMode ? "Moon" : "Sun"}
                 />
               </div>
             </div>
@@ -60,3 +68,5 @@ function UpperHeader() {
 }
 
 export default UpperHeader;
+
+

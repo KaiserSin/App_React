@@ -6,7 +6,7 @@ export function Catalog() {
     return(
         <section className="catalogpc">
             <Menu/>
-            <Subcategories subcategories={}/>
+            {/* <Subcategories subcategories={}/> */}
         </section>
     )
 }

@@ -1,4 +1,4 @@
-html {
+ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-family: sans-serif;
@@ -2154,7 +2154,7 @@ html {
   
 
   
-  /* .header {
+ .header {
     width: 100%;
     max-width: none;
     height: 130px;
@@ -2177,7 +2177,7 @@ html {
     box-shadow: 0 2px 5px #0003;
   } */
   
-  .hblock2 {
+ .hblock2 {
     border-radius: 20px;
     justify-content: flex-start;
     align-items: center;
@@ -2190,9 +2190,9 @@ html {
     padding: 10px;
     display: flex;
     box-shadow: 0 2px 5px #0003;
-  }
+  } */
   
-  /* .button {
+ .button {
     color: #005864;
     background-color: #3898ec00;
     border: 1px solid #005864;
@@ -2207,7 +2207,7 @@ html {
     box-shadow: 0 2px 5px #0003;
   } */
   
-  .image {
+ .image {
     border-radius: 10px;
     min-width: auto;
     max-width: none;
@@ -3353,5 +3353,5 @@ html {
   
   #w-node-_733d6cfb-86cd-d7c0-3e4c-71bf8797d3aa-117db3f6, #w-node-_30ab139e-5e53-5aee-bcae-533aa97d7c37-117db3f6, #w-node-_0a0e160f-e331-5703-f8c9-88c2fe99f12a-117db3f6, #w-node-_6f1fd456-81da-7497-36dc-c8f305f2e7a2-117db3f6, #w-node-_073303c8-97be-0b1c-dc84-6223958f6407-117db3f6, #w-node-_073303c8-97be-0b1c-dc84-6223958f64a7-117db3f6, #w-node-_073303c8-97be-0b1c-dc84-6223958f64dd-117db3f6, #w-node-_1b4aa648-291d-cbab-2519-61c09003f128-117db3f6, #w-node-_133905dc-e9ba-abda-201d-784ef027b902-117db3f6, #w-node-_75d59d12-591d-80f5-403e-e59e2662e2a0-117db3f6, #w-node-_75d59d12-591d-80f5-403e-e59e2662e2ae-117db3f6, #w-node-_84a0891a-131d-380a-d144-8cab55da6f9c-117db3f6, #w-node-_84a0891a-131d-380a-d144-8cab55da6faa-117db3f6, #w-node-_84a0891a-131d-380a-d144-8cab55da6fb8-117db3f6, #w-node-_8b828cf7-5c27-79d7-aa90-adc8e19f69d2-117db3f6, #w-node-_8b828cf7-5c27-79d7-aa90-adc8e19f69e0-117db3f6, #w-node-_8b828cf7-5c27-79d7-aa90-adc8e19f69ee-117db3f6, #w-node-_9a96b193-4e65-91ab-056d-5fa6f2900334-117db3f6, #w-node-_9a96b193-4e65-91ab-056d-5fa6f2900342-117db3f6, #w-node-_9a96b193-4e65-91ab-056d-5fa6f2900350-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558e5a-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558e68-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558e77-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558e85-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558e94-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558ea2-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558eb0-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558ebf-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558ecd-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558edb-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558eea-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558ef8-117db3f6, #w-node-_2fdf659d-aaa9-ed05-1e3d-a1e462558f06-117db3f6 {
     grid-area: span 1 / span 1 / span 1 / span 1;
-  }
+  } 
   
