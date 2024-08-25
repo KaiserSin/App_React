@@ -1,7 +1,7 @@
 import { Menu } from "./Menu.jsx";
-import './Catalog.scss'
 import { Subcategories } from "./Subcategories.jsx";
 import { subcategories } from "../../shared/composables/constants/constant.js";
+import './Catalog.scss'
 
 export function Catalog({categoryName}) {
     return(

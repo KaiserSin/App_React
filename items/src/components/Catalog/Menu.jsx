@@ -1,29 +1,24 @@
 import { Category } from "./Category.jsx";
 import { categories } from "../../shared/composables/constants/constant.js";
+import { useState } from "react";
 import "./Catalog.scss"
 
 export function Menu() {
-    const onClick = () => {
-        console.log('Clicked category')
-        if (chosen == "true") {
-            setStyle("list-item")
-            console.log('Set ' + name + ' category style to list-item')
-        } else {
-            setStyle("list-item-idle")
-            console.log('Set ' + name + ' category style to list-item-idle')
-        }
-    }
+    const [activeId, setActiveId] = useState(1)
 
-    const catalogData = []
-    categories.forEach(element => {
-        catalogData.push(
-            <Category key={element.id} id={element.id} name={element.categoryName} imageUrl={element.imageUrl} chosen={true} onClick={onClick}/>
-        )
-    })
     return(
         <div className="div-block-32">
             <ul className="list">
-                {catalogData}
+                {categories.map((element) => (
+                    <Category
+                        key={element.id}
+                        className={activeId === element.id ? 'list-item' : 'list-item-idle'}
+                        id={element.id}
+                        name={element.categoryName}
+                        imageUrl={element.imageUrl}
+                        onClick={() => setActiveId(element.id)}
+                    />
+                ))}
             </ul>
         </div>
     )

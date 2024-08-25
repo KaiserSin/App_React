@@ -1,4 +1,3 @@
-import { subcategories } from "../../shared/composables/constants/constant"
 import "./Catalog.scss"
 
 export function SubcategoryList({subcategories}) {
