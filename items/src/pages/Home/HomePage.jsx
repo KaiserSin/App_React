@@ -53,7 +53,30 @@ const HomePage = () => {
     }
   };
 
-  return <Content products={products} progress={progress} />;
+  useEffect(() => {
+    const fetchData = async () => {
+      const sizeData = await api.getSize();
+      console.log("Fetched size:", sizeData.size);
+      setSize(sizeData.size);
+      const items = await api.getItems(0, 30);
+      setProducts(items.map((val) => ({ ...val, isFiltered: true })));
+    };
+    fetchData();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const [show, setShow] = useState(false)
+  
+  return (
+    <>
+      <Header setShow={setShow} show={show}/>
+      <Content products={products} progress={progress} show={show}/>
+      <Footer />
+    </>
+  );
 };
 
 export default HomePage;
