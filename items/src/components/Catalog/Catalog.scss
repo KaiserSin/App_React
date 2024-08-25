@@ -1,4 +1,5 @@
 .catalogpc {
+	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	max-width: 1600px;
@@ -113,4 +114,19 @@ ul, ol {
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	margin-bottom: 25px;
+}
+
+.w-layout-grid {
+	// grid-row-gap: 16px;
+	// grid-column-gap: 16px;
+	// grid-template-rows: auto auto;
+	// grid-template-columns: 1fr 1fr;
+	grid-auto-columns: 1fr;
+	display: grid;
+}
+
+.text-block-22 {
+	color: #848484;
+	font-size: 15px;
+	text-decoration: none;
 }

@@ -8,7 +8,7 @@ export function Subcategories({categoryName, subcategories}) {
             <div className="text-block-20">
                 {categoryName}
             </div>
-            <div className="grid-6">
+            <div className="grid-6 w-layout-grid">
                 <SubcategoryList subcategories={subcategories}/>
                 <SubcategoryList subcategories={subcategories}/>
                 <SubcategoryList subcategories={subcategories}/>
