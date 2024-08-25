@@ -72,9 +72,7 @@ const HomePage = () => {
   
   return (
     <>
-      <Header setShow={setShow} show={show}/>
       <Content products={products} progress={progress} show={show}/>
-      <Footer />
     </>
   );
 };

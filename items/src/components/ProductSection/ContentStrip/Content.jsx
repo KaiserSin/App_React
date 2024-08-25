@@ -4,13 +4,8 @@ import './Content.scss';
 import { Catalog } from "../../Catalog/Catalog.jsx"
 import AdSectionTwo from "../../Advertisement/AdvertisementSectionTwo";
 import { SliderSection } from "../../Advertisement/SliderSection.jsx";
-import { Catalog } from "../../Catalog/Catalog.jsx";
 import ScrollToBottom from "../../ScrollToBottom/ScrollToBottom.jsx";
 import { RenderSec } from "../RenderSection/RenderSection.jsx";
-
-
-const Content = ({ products, progress, show }) => {
-  const sections = RenderSec({ products });
 
 const Content = ({products, progress, show}) => {
   const sections = RenderSec({products});
@@ -34,4 +29,4 @@ const Content = ({products, progress, show}) => {
   }
 }
 
-export { Content };
+export { Content }; 
