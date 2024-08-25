@@ -1,23 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './ScrollToBottom.scss'; 
 import ScrollButton from '../../assets/images/scrollToBottom/ScrollToBottom.svg';
 
 const ScrollToBottom = () => {
-  const [isOverFooter, setIsOverFooter] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  let renderTimeout = null;
-
-  const checkFooterPosition = () => {
-    const footer = document.querySelector('footer');
-    const footerTop = footer.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (footerTop <= windowHeight) {
-      setIsOverFooter(true);
-    } else {
-      setIsOverFooter(false);
-    }
-  };
+  const footerRef = useRef(null);
+  let renderTimeout = useRef(null);
 
   const scrollToBottom = () => {
     window.scrollTo({
@@ -27,34 +15,38 @@ const ScrollToBottom = () => {
 
     setScrolling(true);
 
-    renderTimeout = setTimeout(() => {
+    renderTimeout.current = setTimeout(() => {
       setScrolling(false); 
     }, 1250);
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (scrolling) {
-        clearTimeout(renderTimeout); 
-        renderTimeout = setTimeout(() => {
-          setScrolling(false); 
-        }, 750);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsOverFooter(entry.isIntersecting);
+      },
+      {
+        root: null, 
+        threshold: 0, 
       }
-      checkFooterPosition();
-    };
+    );
 
-    window.addEventListener('scroll', handleScroll);
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(renderTimeout); 
+      if (footerRef.current) {
+        observer.unobserve(footerRef.current);
+      }
+      clearTimeout(renderTimeout.current); 
     };
-  }, [scrolling]);
+  }, []);
 
   useEffect(() => {
     if (scrolling) {
       const scrollInterval = setInterval(() => {
-        window.scrollBy(0, 60); 
+        window.scrollBy(0, 50); 
       }, 10); 
 
       return () => clearInterval(scrollInterval);
@@ -62,12 +54,16 @@ const ScrollToBottom = () => {
   }, [scrolling]);
 
   return (
-    <div className={`scroll-to-bottom ${isOverFooter ? 'over-footer' : ''}`} onClick={scrollToBottom}>
+    <div className='scroll-to-bottom' onClick={scrollToBottom}>
       <img src={ScrollButton} alt="Scroll to Bottom" />
+      <footer ref={footerRef} />
     </div>
   );
 };
 
 export default ScrollToBottom;
+
+
+
 
 
