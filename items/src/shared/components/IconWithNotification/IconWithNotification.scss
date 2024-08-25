@@ -1,0 +1,21 @@
+.notification-icon {
+  position: relative;
+  &__image {
+  }
+  &__count {
+    --size: 17px;
+    font-size: 11px;
+    min-width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    background-color: rgba(218, 0, 0, 1);
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

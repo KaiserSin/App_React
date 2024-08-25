@@ -1,184 +1,85 @@
 @import '../../assets/styles/fonts.scss';
 
-.footerblock {
-    background-color: #004B50; 
-    padding: 20px;
-    font-family: 'Jetbrainsmono', sans-serif;
-  
-  
-  .footer {
+.footer {
+  background-color: #005864; 
+  padding: 5px;
+  font-family: 'Jetbrainsmono', sans-serif;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 5px #00000080;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: #005864;
+    z-index: -1;
+  }
+
+  &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #E6DCDD; 
-    flex-flow: row;
+    color: #E6DCDD;
     width: 100%;
-    min-width: 900px;
     max-width: 1600px;
-    height: auto;
-    min-height: 110px;
     margin: 0 auto;
-    position: static;
-    inset: auto 0% 0%;
     padding: 10px 20px;
+  }
 
-    @media screen and (max-width: 991px) {
-        .footer {
-          min-width: auto;
-          display: flex;
-        }
-    }
-
-    @media screen and (max-width: 767px) {
-        .footer {
-        display: none;
-        }
-
-    }
-    }
-  
-  .text-block {
-    max-width: 60%;
-    line-height: 1.5;
+  &__text {
+    max-width: 450px;
     color: silver;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     line-height: 16px;
-    font-family: 'Jetbrainsmono', sans-serif;
-    
   }
 
-  @media screen and (max-width: 991px) {
-  
-    .text-block {
-      max-width: 400px;
-      font-size: 10px;
-    }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
   }
 
-  @media screen and (max-width: 767px) {
-
-  
-    .text-block {
-      min-width: 250px;
-      margin-right: 20px;
+  &__support {
+    &-title {
+      color: #fff;
       font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 4px;
+    }
+
+    &-contact {
+      color: rgb(192, 192, 192);
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 1px;
     }
   }
 
-  .text-block-6 {
-    color: #7c7c7c;
-    margin-left: 5px;
-    font-size: 16px;
-    text-decoration: none;
-  }
-
-  .text-block-7 {
-    width: 170px;
-    min-width: 170px;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .text-block-8 {
-    width: 160px;
-    min-width: 160px;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .text-block-9 {
-    width: 130px;
-    min-width: 130px;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .text-block-10 {
-    width: 190px;
-    min-width: 190px;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .text-block-11 {
-    width: 90px;
-    min-width: 90px;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .text-block-12 {
-    width: 130px;
-    min-width: 130px;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .text-block-13 {
-    width: 100px;
-    min-width: 100px;
-    font-size: 13px;
-    font-weight: 400;
-  }
-  
-  .support-block {
-    text-align: right;
-    margin-top: 5px;
-  }
-  
-  .text-block-2 {
-    color: #fff;
-    margin-bottom: 7px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  
-  .text-block-3,
-  .text-block-5 {
-    color: silver;
-    margin-bottom: 1px;
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-
-  .text-block-16 {
-    color: #e00;
-    letter-spacing: 1px;
-    margin-left: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .text-block-18 {
-    color: #878787;
-    margin-left: 5px;
-    font-size: 13px;
-    text-decoration: none;
-  }
-
-  .text-block-16, .superscript {
-    font-size: 10px;
-  }
-  
-  .link, .link-2, .link-3 {
+  &__link {
     color: #ffb800;
     text-decoration: none;
   }
-  
-  .qr-code {
-    width: 77px;
-    height: auto;
-  }
 
-  .w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-  }
-  
-  .footerbg {
-    background-color: #004B50; 
+  &__qr {
+    &-link {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    &-image {
+      width: 77px;
+      height: auto;
+      border-radius: 10px;
+    }
   }
 }
-  
+
+

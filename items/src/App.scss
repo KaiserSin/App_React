@@ -2,7 +2,12 @@
 @import "./assets/styles/fonts.scss";
 
 body {
+  font-size: 16px;
   font-family: "Jetbrainsmono";
+}
+
+button {
+  cursor: pointer;
 }
 
 [class*="__container"] {

@@ -3,7 +3,8 @@ import api from "@/services/items";
 import Header from "@/components/Header/Header";
 import { Content } from "../../components/ProductSection/ContentStrip/Content";
 import Footer from "@/components/Footer/Footer";
-
+import { Catalog } from "../../components/Catalog/Catalog";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -14,7 +15,6 @@ const HomePage = () => {
 
   const sizeRef = useRef(size);
   const counterRef = useRef(counter);
-  const isMoreRef = useRef(isMore);
 
   useEffect(() => {
     sizeRef.current = size;
@@ -25,13 +25,23 @@ const HomePage = () => {
   }, [counter]);
 
   useEffect(() => {
-    isMoreRef.current = isMore;
-  }, [isMore]);
+    const fetchData = async () => {
+      const sizeData = await api.getSize();
+      setSize(sizeData);
+      const items = await api.getItems(0, 30);
+      setProducts(items.map((val) => ({ ...val, isFiltered: true })));
+    };
+    fetchData();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleScroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
       console.log("Вы достигли конца страницы!");
-      if (isMoreRef.current) {
+      if (isMore) {
         if ((counterRef.current + 1) * 10 >= sizeRef.current) {
           setIsMore(false);
         }
