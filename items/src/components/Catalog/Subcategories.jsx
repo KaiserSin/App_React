@@ -1,5 +1,6 @@
 import { SubcategoryList } from "./SubcategoryList";
 import { subcategories  } from "../../shared/composables/constants/constant";
+import "./Catalog.scss"
 
 export function Subcategories({categoryName, subcategories}) {
     return(
@@ -9,13 +10,13 @@ export function Subcategories({categoryName, subcategories}) {
             </div>
             <div className="grid-6">
                 <SubcategoryList subcategories={subcategories}/>
-                {/* <SubcategoryList subcategories={subcategories}/>
                 <SubcategoryList subcategories={subcategories}/>
                 <SubcategoryList subcategories={subcategories}/>
                 <SubcategoryList subcategories={subcategories}/>
                 <SubcategoryList subcategories={subcategories}/>
                 <SubcategoryList subcategories={subcategories}/>
-                <SubcategoryList subcategories={subcategories}/> */}
+                <SubcategoryList subcategories={subcategories}/>
+                <SubcategoryList subcategories={subcategories}/>
             </div>
         </div>
     )
