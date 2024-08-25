@@ -1,6 +1,6 @@
 import './Catalog.scss'
 
-export function Category ({id, name, imageUrl, subcategories: []}){
+export function Category ({id, name, imageUrl}){
     
     const handleClickCategory = () => {
         

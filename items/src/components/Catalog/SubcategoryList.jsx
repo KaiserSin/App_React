@@ -1,8 +1,10 @@
-export function SubcategoryList({subcategories: []}) {
+import { subcategories } from "../../shared/composables/constants/constant"
+
+export function SubcategoryList({subcategories}) {
     return(
         <div className="subcat">
             <div className="text-block-21">
-                {subcategories}
+                {subcategories[0][0]}
             </div>
             <a className="link-block-32" href="#">
                 <div className="text-block-22">
