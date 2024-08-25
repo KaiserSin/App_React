@@ -1,0 +1,40 @@
+@import "@assets/styles/fonts.scss";
+
+.arrow {
+  font-family: "Jetbrainsmono";
+  cursor: pointer;
+  color: #fff;
+  -webkit-tap-highlight-color: #0000;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 80px;
+  margin: auto;
+  font-size: 40px;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.arrow__icon {
+  font-family: webflow-icons !important;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  background-color: #fff0;
+  border-radius: 8px;
+  font-size: 30px;
+  width: 1em;
+  height: 1em;
+  margin: auto;
+  inset: 0;
+}
+@media screen and (max-width: 780px) {
+  .arrow {
+    display: none;
+  }
+}
