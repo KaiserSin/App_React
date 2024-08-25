@@ -24,6 +24,7 @@ const Content = ({products, progress, show}) => {
         {sections[1]}
         <AdSectionThree/>
         {sections[2]}
+        <ScrollToBottom />  
       </div>
     );
   }
