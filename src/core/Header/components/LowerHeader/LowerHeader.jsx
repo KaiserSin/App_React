@@ -41,7 +41,7 @@ function LowerHeader() {
                 src="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac10985f3cbc367dcde5ce_Group%205-1.svg"
               />
             </Link>
-            <Link to={"/"} className="lower-header__link">
+            <Link to={"/cart"} className="lower-header__link">
               <IconWithNotification
                 notificationCount={10}
                 src="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac1098c943ea53bca551ec_Group%205.svg"

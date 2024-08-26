@@ -1,0 +1,17 @@
+[
+    {
+      "id": "1",
+      "name": "Игровая мышь E-YOOSO",
+      "price": "1903₽",
+      "rating": 4.5,
+      "image": "/path/to/image.png"
+    },
+    {
+      "id": "2",
+      "name": "Клавиатура",
+      "price": "2500₽",
+      "rating": 4.7,
+      "image": "/path/to/image.png"
+    }
+  ]
+  

@@ -1,0 +1,23 @@
+[
+    {
+      "id": "1",
+      "name": "Игровая мышь E-YOOSO",
+      "price": "1903₽",
+      "status": "В наличии",
+      "quantity": 1,
+      "image": "/path/to/image.png",
+      "rating": 4.5,
+      "reviews": 15
+    },
+    {
+      "id": "2",
+      "name": "Игровая мышь E-YOOSO",
+      "price": "1903₽",
+      "status": "Ожидание",
+      "quantity": 1,
+      "image": "/path/to/image.png",
+      "rating": 4.5,
+      "reviews": 15
+    }
+  ]
+  
