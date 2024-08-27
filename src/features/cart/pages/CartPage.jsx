@@ -4,11 +4,12 @@ import VerticalNav from '@features/cart/components/VerticalNav';
 import CartContent from '@features/cart/components/CartContent';
 import DeliveryInfo from '@features/cart/components/DeliveryInfo';
 import ArtificialText from '@features/cart/components/ArtificialText';
-import Recommendations from '@features/cart/components/Recommendations';
+import ProductStrip from '@features/cart/components/ProductStrip';
 import './CartPage.scss';
 
 const CartPage = () => {
   return (
+    <>
     <div className="cart-page">
       <CartHeader />
       <div className="cart-page__grid">
@@ -19,8 +20,12 @@ const CartPage = () => {
           <ArtificialText />
         </div>
       </div>
-      <Recommendations />
-    </div>
+       </div>
+      <div className='recommendations'>
+        <ProductStrip />
+        <ProductStrip />
+      </div>
+    </>
   );
 };
 

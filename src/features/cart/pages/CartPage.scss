@@ -7,7 +7,7 @@
       display: grid;
       grid-template-columns: 80px 1fr 467px; 
       grid-template-rows: 1fr auto; 
-      grid-gap: 20px;
+      grid-gap: 30px;
       padding: 20px 33px;
     }
   
@@ -36,6 +36,22 @@
       grid-row: 2 / 3; 
     }
   }
+
+  .recommendations {
+    width: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+  }
+  
+  .product-strip {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+  }
+  
   
   
   

@@ -5,19 +5,51 @@
       "price": "1903₽",
       "status": "В наличии",
       "quantity": 1,
-      "image": "/path/to/image.png",
+      "image_url": "./src/assets/images/cartImages/mouse.png",
       "rating": 4.5,
-      "reviews": 15
+      "brend": true,
+      "sellout": true,
+      "bonus": false,
+      "abroad": false
     },
     {
       "id": "2",
       "name": "Игровая мышь E-YOOSO",
       "price": "1903₽",
-      "status": "Ожидание",
+      "status": "Осталось меньше",
       "quantity": 1,
-      "image": "/path/to/image.png",
+      "image_url": "./src/assets/images/cartImages/mouse.png",
       "rating": 4.5,
-      "reviews": 15
+      "brend": true,
+      "sellout": false,
+      "bonus": false,
+      "abroad": false
+    },
+    {
+      "id": "3",
+      "name": "Игровая мышь E-YOOSO",
+      "price": "1903₽",
+      "status": "В наличии",
+      "quantity": 1,
+      "image_url": "./src/assets/images/cartImages/mouse.png",
+      "rating": 4.5,
+      "brend": true,
+      "sellout": true,
+      "bonus": false,
+      "abroad": false
+    },
+    {
+      "id": "4",
+      "name": "Игровая мышь E-YOOSO",
+      "price": "1903₽",
+      "status": "Закончился",
+      "quantity": 1,
+      "image_url": "./src/assets/images/cartImages/mouse.png",
+      "rating": 4.5,
+      "brend": true,
+      "sellout": true,
+      "bonus": false,
+      "abroad": false
     }
   ]
   
