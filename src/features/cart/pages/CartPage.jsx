@@ -5,6 +5,7 @@ import CartContent from '@features/cart/components/CartContent';
 import DeliveryInfo from '@features/cart/components/DeliveryInfo';
 import ArtificialText from '@features/cart/components/ArtificialText';
 import ProductStrip from '@features/cart/components/ProductStrip';
+import ScrollToBottom from "../../../features/market/components/ScrollToBottom/ScrollToBottom";
 import './CartPage.scss';
 
 const CartPage = () => {
@@ -25,6 +26,7 @@ const CartPage = () => {
         <ProductStrip />
         <ProductStrip />
       </div>
+      <ScrollToBottom />  
     </>
   );
 };
