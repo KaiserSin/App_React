@@ -28,7 +28,7 @@
 .user__info-block h3 {
   color: rgba(132, 132, 132, 1);
 }
-.profile__images {
+.user__images {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -37,17 +37,17 @@
   align-items: center;
   justify-content: center;
 }
-.change__button {
+.user__info-block-button {
   color: rgba(0, 88, 100, 1);
   font-size: 14px;
   cursor: pointer;
 }
-.email__info {
+.user__info-email {
   display: flex;
   gap: 13px;
   align-items: center;
 }
-.email__confirm {
+.user__info-email-confirm-icon {
   color: rgba(0, 184, 0, 1);
   font-size: 10px;
 }

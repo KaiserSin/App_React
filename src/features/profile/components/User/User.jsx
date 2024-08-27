@@ -6,7 +6,7 @@ import { UserSecurity } from "../UserSecurity/User-security";
 export const User = () => {
   return (
     <section className="user">
-      <div className="profile__images">
+      <div className="user__images">
         <img src="/profile-images/user.png" alt="prfile__image" />
       </div>
       <div className="user__info">
@@ -22,32 +22,31 @@ export const User = () => {
               <span>
                 {userInfo.firstName} {userInfo.lastName} {userInfo.surname}
               </span>
-              <button className="change__button">Изменить</button>
+              <button className="user__info-block-button">Изменить</button>
             </div>
             <div className="user__info-block">
               <h3>Дата рождения</h3>
               <span>{userInfo.dateOfBirth}</span>
-              <button className="change__button">Изменить</button>
+              <button className="user__info-block-button">Изменить</button>
             </div>
             <div className="user__info-block">
               <h3>Пол</h3>
               <span>{userInfo.sex}</span>
-              <button className="change__button">Изменить</button>
+              <button className="user__info-block-button">Изменить</button>
             </div>
             <div className="user__info-block">
               <h3>Почта</h3>
-              <div className="email__info">
+              <div className="user__info-email">
                 <span>{userInfo.email}</span>
                 {userInfo.isConfirm ? (
-                  <div className="email__confirm">
-                    <img src="" alt="" />
+                  <div className="user__info-email-confirm-icon">
                     <span>✅ Почта подтверждена</span>
                   </div>
                 ) : (
                   ""
                 )}
               </div>
-              <button className="change__button">Изменить</button>
+              <button className="user__info-block-button">Изменить</button>
             </div>
           </div>
         </div>

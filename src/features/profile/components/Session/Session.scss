@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 11px;
 }
-.session {
+.sessions__item {
   display: flex;
   gap: 18px;
   background: rgba(218, 218, 218, 0.4);
@@ -25,11 +25,11 @@
   padding: 7px;
   font-size: 12px;
 }
-.session__info {
+.sessions__info {
   color: black;
   width: 160px;
 }
-.session__button {
+.sessions__button {
   width: 50px;
   height: 26px;
   color: white;
@@ -39,7 +39,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.session__aditional-info {
+.sessions__aditional-info {
   font-size: 14p;
   color: rgba(155, 155, 155, 1);
 }

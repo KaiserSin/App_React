@@ -12,21 +12,21 @@ export const Session = () => {
       </div>
       <div className="sessions__wrapper">
         {sessions.map((session) => (
-          <div key={session.id} className="session">
+          <div key={session.id} className="sessions__item">
             <img
               src={session.browserIcon}
               alt="browser"
               width={35}
               height={35}
             />
-            <div className="session__info">
+            <div className="sessions__info">
               <span>{session.ip}</span>
               {session.isCurrent ? <span> - Текущая</span> : ""}
-              <div className="session__aditional-info">
+              <div className="sessions__aditional-info">
                 {session.os}, {session.country}
               </div>
             </div>
-            <button className="session__button">Выйти</button>
+            <button className="sessions__button">Выйти</button>
           </div>
         ))}
       </div>
