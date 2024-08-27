@@ -5,9 +5,9 @@ import { UserSecurity } from "../UserSecurity/User-security";
 
 export const User = () => {
   return (
-    <div className="user">
+    <section className="user">
       <div className="profile__images">
-        <img src="/profile-images/user.png" alt="" />
+        <img src="/profile-images/user.png" alt="prfile__image" />
       </div>
       <div className="user__info">
         <div className="user__info-title">
@@ -53,6 +53,6 @@ export const User = () => {
         </div>
         <UserSecurity />
       </div>
-    </div>
+    </section>
   );
 };

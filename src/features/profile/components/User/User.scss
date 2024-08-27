@@ -1,6 +1,6 @@
 .user {
   display: flex;
-  gap: 49px;
+  justify-content: space-around;
   margin-top: 10px;
   flex-grow: 1;
 }
@@ -14,7 +14,7 @@
 }
 .user__info-blocks {
   display: flex;
-  gap: 49px;
+  gap: 30px;
   max-width: 650px;
   flex-wrap: wrap;
   margin-top: 39px;
@@ -29,8 +29,8 @@
   color: rgba(132, 132, 132, 1);
 }
 .profile__images {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background: rgba(218, 218, 218, 0.4);
   display: flex;

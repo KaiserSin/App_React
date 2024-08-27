@@ -1,7 +1,6 @@
 .sessions {
   display: flex;
   flex-direction: column;
-  min-height: 716px;
   padding: 25px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35) inset;
   border-radius: 25px;
@@ -24,13 +23,14 @@
   justify-content: space-between;
   border-radius: 10px;
   padding: 7px;
+  font-size: 12px;
 }
 .session__info {
   color: black;
   width: 160px;
 }
 .session__button {
-  width: 80px;
+  width: 50px;
   height: 26px;
   color: white;
   background: rgba(204, 0, 0, 0.65);

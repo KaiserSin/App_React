@@ -3,7 +3,7 @@ import { sessions } from "../../constants/Sessions";
 import "./Session.scss";
 export const Session = () => {
   return (
-    <div className="sessions">
+    <section className="sessions">
       <div className="sessions__title">
         <h2>Активные сессии</h2>
         <p>
@@ -30,6 +30,6 @@ export const Session = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
