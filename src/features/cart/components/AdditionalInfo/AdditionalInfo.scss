@@ -1,0 +1,26 @@
+.additional-info {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .additional-info__flex {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    // padding: 8px 12px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .commodity-text {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .cart-items__icon,
+  .cart-items__icon1 {
+    width: 16px;
+    height: 16px;
+  }
+}

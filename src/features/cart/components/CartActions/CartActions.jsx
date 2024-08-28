@@ -1,11 +1,11 @@
-import React from 'react';
-import pen from '@assets/images/cartImages/pen.svg';
-import collect from '@assets/images/cartImages/collect.svg';
-import share from '@assets/images/cartImages/share.svg';
-import greenbox from '@assets/images/cartImages/greenbox.svg';
-import redtrashbin from '@assets/images/cartImages/redtrashbin.svg';
-import change from '@assets/images/cartImages/change.svg';
-import './CartActions.scss';
+import React from "react";
+import pen from "@assets/images/cartImages/pen.svg";
+import collect from "@assets/images/cartImages/collect.svg";
+import share from "@assets/images/cartImages/share.svg";
+import greenbox from "@assets/images/cartImages/greenbox.svg";
+import redtrashbin from "@assets/images/cartImages/redtrashbin.svg";
+import change from "@assets/images/cartImages/change.svg";
+import "./CartActions.scss";
 
 const CartActions = () => {
   return (
@@ -14,7 +14,11 @@ const CartActions = () => {
         <div className="cart-actions__side cart-actions__side--left">
           <img src={pen} alt="Pen Icon" className="cart-actions__icon" />
           <span className="cart-actions__text">Подарки</span>
-          <img src={collect} alt="Collect Icon" className="cart-actions__icon-collect" />
+          <img
+            src={collect}
+            alt="Collect Icon"
+            className="cart-actions__icon-collect"
+          />
         </div>
         <div className="cart-actions__side cart-actions__side--right">
           <img src={share} alt="Share Icon" className="cart-actions__icon" />
@@ -24,17 +28,26 @@ const CartActions = () => {
 
       <div className="cart-actions__row cart-actions__row--middle">
         <span className="cart-actions__count">
-          4 товара · <span className="cart-actions__unavailable">1 недоступен</span>
+          4 товара ·{" "}
+          <span className="cart-actions__unavailable">1 недоступен</span>
         </span>
       </div>
 
       <div className="cart-actions__row cart-actions__row--bottom">
         <div className="cart-actions__action">
-          <img src={greenbox} alt="Select All Icon" className="cart-actions__icon" />
+          <img
+            src={greenbox}
+            alt="Select All Icon"
+            className="cart-actions__icon"
+          />
           <span className="cart-actions__text">Выбрать все</span>
         </div>
         <div className="cart-actions__action">
-          <img src={redtrashbin} alt="Delete Icon" className="cart-actions__icon" />
+          <img
+            src={redtrashbin}
+            alt="Delete Icon"
+            className="cart-actions__icon"
+          />
           <span className="cart-actions__text">Удалить</span>
         </div>
         <div className="cart-actions__action">
@@ -49,5 +62,3 @@ const CartActions = () => {
 };
 
 export default CartActions;
-
-

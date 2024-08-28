@@ -1,7 +1,7 @@
-import React from 'react';
-import CartActions from './CartActions';
-import CartItems from './CartItems';
-import './CartContent.scss';
+import React from "react";
+import CartActions from "../CartActions/CartActions";
+import CartItems from "../CartItems/CartItems";
+import "./CartContent.scss";
 
 const CartContent = () => {
   return (
