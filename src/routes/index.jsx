@@ -3,6 +3,8 @@ import HomePage from "@features/market/pages/Home/HomePage";
 import Plug from "@core/NotFound/ErrorPage";
 import MainLayout from "../layouts/MainLayout";
 import { Navigate } from "react-router-dom";
+import ProductPage from "../features/market/pages/ProductPage/ProductPage";
+
 
 export const privateRoutes = [
   // {path: "/", element:  }
@@ -16,6 +18,10 @@ export const publicRoutes = [
       { path: "/", element: <HomePage /> },
       { path: "profile", element: <Profile /> },
       { path: "inactive-link", element: <Plug /> },
+      {
+        path: "product/:id",
+        element: <ProductPage />,
+      },
     ],
   },
   { path: "/*", element: <Navigate to={"inactive-link"} /> },

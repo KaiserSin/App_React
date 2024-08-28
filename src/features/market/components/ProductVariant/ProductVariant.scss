@@ -1,0 +1,11 @@
+.product-variant {
+  width: fit-content;
+  background-color: white;
+  border: 2px solid rgb(23, 23, 23);
+  border-radius: 6px;
+
+  &--disabled {
+    opacity: 0.5;
+    border: 2px dashed rgb(132, 132, 132);
+  }
+}

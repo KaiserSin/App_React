@@ -1,0 +1,60 @@
+.product-section-cart {
+  &__to-cart-menu {
+    border-radius: 20px;
+    font-size: 13px;
+
+    box-shadow: 4px 4px 15px -5px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  &__header {
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__cost-history {
+  }
+  &__cost {
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+    background-color: #00cc6a;
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
+
+  &__delivery {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: calc(179 / 376 * 100%) calc(133 / 376 * 100%) calc(40 / 376 * 100%);
+    gap: 16px;
+    margin-top: 16px;
+  }
+  &__like {
+    aspect-ratio: 1;
+    padding: 0;
+  }
+  &__installment-plan {
+    grid-column: 1 / 4;
+  }
+
+  &__dolyami {
+    grid-column: 1 / 4;
+  }
+  &__ai-block {
+    margin-top: 20px;
+  }
+}
+
+.product-section-cart-price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  &__text {
+  }
+}

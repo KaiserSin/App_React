@@ -1,0 +1,43 @@
+.brand-card {
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 20px;
+  padding: 15px 20px;
+
+  &__block-img {
+  }
+
+  &__img {
+  }
+
+  &__name {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__link {
+    display: block;
+    color: rgb(179, 179, 179);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+}
+
+.brand-card-common-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 10px;
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &__icon {
+  }
+  &__text {
+  }
+}
