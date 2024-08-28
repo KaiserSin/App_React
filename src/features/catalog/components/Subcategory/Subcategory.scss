@@ -1,0 +1,18 @@
+.subcategory {
+  display: flex;
+  row-gap: 37px;
+  column-gap: 70px;
+  max-width: 800px;
+  flex-wrap: wrap;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  &__button {
+    margin-top: 8px;
+    font-size: 18px;
+    color: rgba(0, 88, 100, 1);
+  }
+}
