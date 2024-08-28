@@ -1,0 +1,9 @@
+.catalog__category {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex: 1;
+  h1 {
+    font-size: 50px;
+  }
+}
