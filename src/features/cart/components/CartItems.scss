@@ -5,7 +5,7 @@
     border-radius: 25px;
   
     &__column {
-      width: 50%;
+      width: 55%;
     }
   
     &__column--empty {
@@ -16,7 +16,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px;
+      padding: 10px;
       margin-bottom: 15px;
       background-color: #fff;
       border-radius: 8px;
@@ -46,6 +46,7 @@
         flex-direction: column;
         justify-content: flex-start;
         justify-content: space-between;
+        width: 300px;
         
       }
 
@@ -55,24 +56,34 @@
         justify-content: center;
         justify-content: space-between;
         margin-top: 20px;
+        
+      }
+
+      .cart-items__action-icon {
+        margin-left: 10px;
       }
 
       .fourth-column {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        justify-content: space-between;
-        margin-left: 20px;
+        justify-content: space-evenly; 
+        align-items: center;
+        height: 100%; 
+    
+
+
       
         .cart-items__pricing {
           width: 100%;
           text-align: right; 
+          flex-grow: 1;
         }
       
         .cart-items__quantity-rating {
           display: flex;
           justify-content: center; 
           width: 100%;
+          flex-grow: 1;
         }
       
         .cart-items__quantity-btn {
@@ -82,6 +93,7 @@
           height: 30px;
           cursor: pointer;
           padding-left: 10px;
+          flex-grow: 1;
         }
       
         .cart-items__rating {
@@ -99,6 +111,7 @@
 
       .cart-items__status--red {
         color: red;
+        font-weight: 500;
       }
 
       .cart-items__price--green {
@@ -110,7 +123,18 @@
       .cart-items__status {
         font-size: 10px;
         display: flex;
+        // justify-items: center;
+        // align-items: center;
+        margin-left: 10px;
+        padding-top: 2px;
 
+      }
+
+      .paragraph-status {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-right: 40px;
       }
 
       .cart-items__order-button {
@@ -145,8 +169,6 @@
       .cart-items__details {
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
-        // flex-grow: 1;
         margin-right: 15px;
 
         .brend-sellout {
@@ -156,7 +178,7 @@
         }
 
         .cart-items__name {
-            font-size: 16px;
+            font-size: 14px;
         }
 
      

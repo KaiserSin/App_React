@@ -43,14 +43,15 @@ const CartItems = () => {
                           </div>
                   </div>
                     <div className="cart-items__actions">
-                          <img src={heart} alt="Heart Icon" className="cart-items__action-icon" />
-                          <div>
+                          <div><img src={heart} alt="Heart Icon" className="cart-items__action-icon" />
+                          
                           <img src={lightning} alt="Heart Icon" className="cart-items__action-icon" />
                           <button className="cart-items__order-button">Заказать</button>
                           </div>
-                          <p className={`cart-items__status ${item.status === 'Осталось меньше' ? 'cart-items__status--red' : ''}`}>
+                          
+                          <div className='paragraph-status'><p className={`cart-items__status ${item.status === 'Осталось меньше' ? 'cart-items__status--red' : ''}`}>
                           {item.status}
-                          </p>
+                          </p></div>
                     </div> 
               </div>
 
