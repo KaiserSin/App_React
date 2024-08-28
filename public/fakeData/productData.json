@@ -1,0 +1,45 @@
+{
+  "productName": "Мышь игровая PB1P",
+  "tags": ["Компьютеры", "Перефирия", "Устройства ввода", "Мыши"],
+  "images": [
+    "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac3a34d91ae6572dce76fe_7078587423%201.png",
+    "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac3a34d91ae6572dce76fe_7078587423%201.png",
+    "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac3a34d91ae6572dce76fe_7078587423%201.png",
+    "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac3a34d91ae6572dce76fe_7078587423%201.png"
+  ],
+  "rating": "4.9",
+  "reviewsCount": "11 000",
+  "labels": ["Супер Выгода"],
+  "shop": {
+    "labels": {
+      "isPremium": true,
+      "isTopRating": true
+    },
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw4sdxD2nKp4NZuE3KcfHoDsmoYrEG3_Xvcw&s",
+    "name": "Топ пингвин",
+    "address": "#",
+    "rating": "4.7",
+    "deliveryPercentage": "98%",
+    "moneyBackTime": "7 дней"
+  },
+  "additionalInfo": "Товар из-за рубежа. Возможна оплата после получения",
+  "variants": [
+    {
+      "inStock": true,
+      "value": "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac3a34d91ae6572dce76fe_7078587423%201.png"
+    },
+    {
+      "inStock": true,
+      "value": "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac3a34d91ae6572dce76fe_7078587423%201.png"
+    },
+    {
+      "inStock": false,
+      "value": "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac3a34d91ae6572dce76fe_7078587423%201.png"
+    }
+  ],
+  "configuration": [
+    { "inStock": true, "value": "4000 DPI" },
+    { "inStock": false, "value": "6000 DPI" }
+  ],
+  "cost": "3982Р"
+}
