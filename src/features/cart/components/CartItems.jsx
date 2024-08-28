@@ -78,7 +78,7 @@ const CartItems = () => {
           </div>
         ))}
 
-        <div className='commodity-info'>
+        {/* <div className='commodity-info'>
           
           <div>
             <img src={crown} alt="Select Icon" className="cart-items__icon" />
@@ -104,7 +104,7 @@ const CartItems = () => {
           <span className='commodity-text'>Заменить автоматически</span>
         </div>  
 
-        </div>
+        </div> */}
 
       </div>
       

@@ -1,8 +1,9 @@
 import React from 'react';
 import './ProductStrip.scss';
-import recommendations from '@features/cart/constants/Recommendations.json';
+import recommendations from '@shared/composables/constants/productStrip.json';
 import toBin from '@assets/images/cartImages/toBin.svg';
 import yellowLightning from '@assets/images/cartImages/yellowLightning.svg';
+import star from '@assets/images/cartImages/Star.svg';
 
 const ProductStrip = () => {
   return (
@@ -12,8 +13,8 @@ const ProductStrip = () => {
           <img src={item.image_url} alt={item.name} className="product-card__image" />
           
           <div className="product-card__rating-reviews">
-            <span className="product-card__star">⭐</span>
-            <span>{item.rating}</span>
+            <span className="product-card__star"> <img src={star} alt="Star" className="product-card__star" /></span>
+            <span className='rating'>{item.rating}</span>
             <span className="reviews">{item.reviews}</span>
           </div>
 

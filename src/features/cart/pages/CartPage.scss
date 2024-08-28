@@ -1,14 +1,38 @@
+.cart-header {
+  width: 1600px; 
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-bottom: 30px;
+}
+
+.cart-header__title {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 700; 
+  font-size: 32px; 
+  line-height: 42.24px; 
+  color: #171717; 
+  margin: 0; 
+}
+
 .cart-page {
-    width: 1900px;
+    width: 1600px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
     
     &__grid {
+      width: 1600px;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: 80px 1fr 467px; 
       grid-template-rows: 1fr auto; 
       grid-gap: 30px;
-      padding: 20px 33px;
+      
+      
     }
   
     .vertical-nav {
@@ -38,7 +62,7 @@
   }
 
   .recommendations {
-    width: 1700px;
+    width: 1600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
