@@ -11,3 +11,15 @@
   cursor: pointer;
   box-shadow: 2px 2px 3.5px 0px rgba(0, 0, 0, 0.35);
 }
+
+.button--color--yellow {
+  color: black;
+  background-color: var(--color-yellow);
+  box-shadow: none;
+}
+
+.button--color--gray {
+  color: black;
+  background: rgb(236, 236, 236);
+  box-shadow: none;
+}

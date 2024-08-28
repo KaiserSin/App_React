@@ -1,0 +1,31 @@
+.delivery-block {
+  padding-inline: 15px;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 10px;
+  &__item {
+    padding-block: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &:not(:last-child) {
+      border-bottom: 1px solid rgb(218, 218, 218);
+    }
+  }
+  &__inner-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &__date {
+    font-weight: 700;
+  }
+  &__method {
+    color: #9f9f9f;
+  }
+  &__cost {
+    font-weight: 700;
+  }
+  &__label {
+    font-size: 10px;
+  }
+}
