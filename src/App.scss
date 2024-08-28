@@ -1,9 +1,18 @@
 @import "./assets/styles/reset.scss";
 @import "./assets/styles//fonts.scss";
 
+:root {
+  --color-yellow: #ffcc00;
+  --color-turquoise: rgb(0, 88, 100);
+}
+
 body {
   font-size: 16px;
   font-family: "Jetbrainsmono";
+}
+
+h2 {
+  font-size: 30px;
 }
 
 button {
