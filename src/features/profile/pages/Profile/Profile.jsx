@@ -9,7 +9,7 @@ export const Profile = () => {
   const [activeId, setActiveId] = useState(1);
 
   return (
-    <section className="profile__section">
+    <section className="profile">
       <div className="profile__menu">
         {profileMenuItems.map((item) => (
           <div
