@@ -19,7 +19,7 @@ export const AdditionalInfo = ({ bonus, abroad, search, change }) => {
         ""
       )}
       {abroad ? (
-        <div className="">
+        <div className="additional-info__flex">
           <img src={plane} alt="Delete Icon" className="cart-items__icon" />
           <span className="commodity-text">Товар из-за рубежа</span>
         </div>
@@ -27,7 +27,7 @@ export const AdditionalInfo = ({ bonus, abroad, search, change }) => {
         ""
       )}
       {search ? (
-        <div className="">
+        <div className="additional-info__flex">
           <img
             src={searching}
             alt="Select Icon"
@@ -39,7 +39,7 @@ export const AdditionalInfo = ({ bonus, abroad, search, change }) => {
         ""
       )}
       {change ? (
-        <div className="">
+        <div className="additional-info__flex">
           <img src={refresh} alt="Delete Icon" className="cart-items__icon" />
           <span className="commodity-text">Заменить автоматически</span>
         </div>

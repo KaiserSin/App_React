@@ -5,6 +5,8 @@ import plane from "@assets/images/cartImages/plane.svg";
 import razer from "@assets/images/cartImages/razer.svg";
 import heart from "@assets/images/cartImages/heart.svg";
 import lightning from "@assets/images/cartImages/lightning.svg";
+import star from "@assets/images/cartImages/Star.svg";
+import selloutImagePath from "@assets/images/cartImages/sellout.svg";
 import "./CartItem.scss";
 import { AdditionalInfo } from "../AdditionalInfo/AdditionalInfo";
 
@@ -22,7 +24,15 @@ const CartItem = ({
   return (
     <>
       <div>
-        <div className="cart-items__product">
+        <div
+          className={
+            status.ends
+              ? "cart-items__product"
+              : status.available
+              ? "cart-items__product"
+              : "cart-items__product--pale"
+          }
+        >
           <div className="cart-items__controls">
             <img
               src={greenbox}
@@ -51,7 +61,7 @@ const CartItem = ({
                   )}
                   {sellout && (
                     <img
-                      src={sellout}
+                      src={selloutImagePath}
                       alt="Sellout Icon"
                       className="cart-items__sellout"
                     />
@@ -70,7 +80,7 @@ const CartItem = ({
                 <img
                   src={lightning}
                   alt="Heart Icon"
-                  className="cart-items__action-icon"
+                  className="cart-items__action-icon-lightning"
                 />
                 <button className="cart-items__order-button">Заказать</button>
               </div>
@@ -78,10 +88,10 @@ const CartItem = ({
               <div className="paragraph-status">
                 <p className="cart-items__status">
                   {status.ends
-                    ? "Заканчивается"
+                    ? "Осталось меньше"
                     : status.available
                     ? ""
-                    : "Нет в наличии"}
+                    : "Закончился"}
                 </p>
               </div>
             </div>
@@ -89,7 +99,13 @@ const CartItem = ({
 
           <div className="fourth-column">
             <div className="cart-items__pricing">
-              <p className="cart-items__price">{price}</p>
+              <p
+                className={
+                  sellout ? "cart-items__price" : "cart-items__price--green"
+                }
+              >
+                {price}
+              </p>
             </div>
 
             <div className="cart-items__quantity-rating">
@@ -99,7 +115,14 @@ const CartItem = ({
             </div>
 
             <div>
-              <span className="cart-items__rating">⭐{rating}</span>
+              <span className="cart-items__rating">
+                <img
+                  src={star}
+                  alt="Heart Icon"
+                  className="cart-items__action-icon-star"
+                />
+                <span className="rating-card">{rating}</span>
+              </span>
             </div>
           </div>
         </div>
