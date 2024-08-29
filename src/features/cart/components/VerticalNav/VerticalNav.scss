@@ -1,0 +1,39 @@
+.vertical-nav {
+  width: 80px;
+  height: 945px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 17px;
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__plus {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #171717;
+    border: 1px;
+  }
+}

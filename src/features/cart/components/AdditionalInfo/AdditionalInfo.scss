@@ -1,0 +1,29 @@
+.additional-info {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-left: 12px;
+  padding-bottom: 25px;
+
+  .additional-info__flex {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .commodity-text {
+    margin-left: 8px;
+    font-size: 7px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cart-items__icon,
+  .cart-items__icon1 {
+    width: 10px;
+    height: 10px;
+  }
+}
