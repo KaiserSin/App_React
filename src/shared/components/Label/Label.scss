@@ -1,0 +1,22 @@
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 3px 12px;
+  color: white;
+  width: fit-content;
+  background-color: black;
+  &--color--red {
+    color: white;
+    background: rgb(218, 0, 0);
+  }
+  &--color--white {
+    background-color: white;
+    color: black;
+  }
+}

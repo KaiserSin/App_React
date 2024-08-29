@@ -1,0 +1,138 @@
+.product-section-info {
+  &__labels {
+    margin-bottom: 10px;
+  }
+  &__product-name {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  &__tags {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__addition {
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--color-turquoise);
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  &__rating-star {
+    width: 15px;
+    aspect-ratio: 1;
+  }
+  &__reviews-count {
+    font-size: 13px;
+
+    color: rgb(132, 132, 132);
+  }
+  &__brand-card {
+    max-width: 262px;
+    margin-top: 30px;
+  }
+}
+
+.product-section-variants {
+  margin-top: 20px;
+  &__items {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item {
+    padding: 10px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+  }
+  &__img {
+    width: 51px;
+    height: 44px;
+    object-fit: cover;
+  }
+}
+
+.product-section-config {
+  margin-top: 20px;
+  &__items {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__item {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 20px;
+  }
+}
+
+.product-section-overview {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-section-overview-card {
+  max-width: 400px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 15px;
+
+  &__header {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__icon {
+    width: 15px;
+    aspect-ratio: 1;
+  }
+  &__body {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  &__more {
+    margin-top: 10px;
+    color: var(--color-turquoise);
+    font-weight: 500;
+  }
+}
+
+.product-section-description {
+}
+.product-section-features {
+  &__more {
+    margin-top: 30px;
+  }
+}
+
+.product-section-features-table {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 5px;
+  column-gap: 20px;
+  &__title {
+    border-bottom: 1px solid rgb(151, 151, 151);
+  }
+
+  &__body {
+    color: var(--color-turquoise);
+  }
+}

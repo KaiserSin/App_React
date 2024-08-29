@@ -1,0 +1,107 @@
+
+
+.product-section-gallery {
+  display: grid;
+  grid-template-columns: 85px 425px;
+  gap: 16px;
+
+  &__thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: flex-start;
+  }
+
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  &__thumb-img {
+    width: 65%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  &__more-thumbs {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 71px;
+    padding-block: 5px;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    &::after {
+      content: "";
+      rotate: 45deg;
+      translate: 0 -2px;
+      width: 10px;
+      aspect-ratio: 1;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+  }
+
+  &__block-main-image {
+    width: 100%;
+    aspect-ratio: 0.95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  &__main-image {
+    width: 277px;
+  }
+}
+
+.product-section-sale {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 20px;
+  padding: 10px 15px;
+  grid-column: 2 /2;
+  gap: 15px;
+
+  &__stock-progress {
+  }
+
+  &__info {
+    flex: 1 1 auto;
+  }
+
+  &__state {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__items-left {
+    color: rgb(114, 114, 114);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  &__days-left {
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: rgba(218, 218, 218, 0.25);
+  }
+  &__red-span {
+    color: red;
+  }
+}
+
+.product-section-shop-card {
+  grid-column: 2 /2;
+}

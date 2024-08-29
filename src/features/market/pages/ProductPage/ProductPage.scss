@@ -1,0 +1,9 @@
+.product-section {
+  &__container {
+    padding-block: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr 450px;
+    align-items: flex-start;
+    column-gap: 50px;
+  }
+}

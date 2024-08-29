@@ -1,0 +1,23 @@
+.dolyami {
+  border-radius: 8px;
+  background-color: black;
+  padding: 12px 20px 12px 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  &__img {
+    min-width: 85px;
+  }
+  &__text {
+    flex: 1 1 auto;
+  }
+  &__arrow {
+    width: 10px;
+    aspect-ratio: 1;
+    border-top: 3px solid rgb(180, 180, 180);
+    border-right: 3px solid rgb(180, 180, 180);
+    rotate: 45deg;
+  }
+}

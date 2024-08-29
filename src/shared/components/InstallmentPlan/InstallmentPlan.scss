@@ -1,0 +1,28 @@
+.installment-plan {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: rgb(249, 249, 249);
+  padding: 10px 20px 10px 10px;
+  &__button {
+  }
+  &__arrow {
+    width: 10px;
+    aspect-ratio: 1;
+    border-top: 3px solid rgb(180, 180, 180);
+    border-right: 3px solid rgb(180, 180, 180);
+    rotate: 45deg;
+  }
+}
+.installment-plan-text {
+  flex: 1 1 auto;
+  &__large {
+    font-weight: 700;
+  }
+  &__small {
+    color: rgb(118, 118, 118);
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

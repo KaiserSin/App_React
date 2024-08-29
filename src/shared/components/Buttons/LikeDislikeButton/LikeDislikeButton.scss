@@ -1,0 +1,17 @@
+.like-dislike-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+  background: rgb(249, 249, 249);
+  padding: 5px;
+  &__likes-count {
+    font-size: 13px;
+  }
+
+  &__img {
+  }
+  &__img--reverse {
+    rotate: 180deg;
+  }
+}
