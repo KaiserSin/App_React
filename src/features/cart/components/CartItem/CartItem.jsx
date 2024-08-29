@@ -1,7 +1,6 @@
 import React from "react";
 import greenbox from "@assets/images/cartImages/greenbox.svg";
 import redtrashbin from "@assets/images/cartImages/redtrashbin.svg";
-import plane from "@assets/images/cartImages/plane.svg";
 import razer from "@assets/images/cartImages/razer.svg";
 import heart from "@assets/images/cartImages/heart.svg";
 import lightning from "@assets/images/cartImages/lightning.svg";
@@ -25,7 +24,9 @@ const CartItem = ({
     <>
       <div>
         <div
-          className={`cart-items__product ${status.available ? "" : "pale"}`}
+          className={`cart-items__product ${status.available ? "" : "pale"} ${
+            additionalInfo ? "has-additional-info" : ""
+          }`}
         >
           <div className="cart-items__controls">
             <img

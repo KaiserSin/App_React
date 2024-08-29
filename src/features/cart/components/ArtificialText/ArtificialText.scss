@@ -2,15 +2,14 @@
   background-color: #f7f8fa;
   border-radius: 16px;
   padding: 16px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   color: #171717;
-  // box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.2);
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    padding-bottom: 5px;
 
     &-left {
       display: flex;
@@ -21,12 +20,11 @@
         width: 11px;
         height: 11px;
       }
-
     }
 
-      .gpt-summary__header-text {
-        color: #005864;
-      }
+    .gpt-summary__header-text {
+      color: #005864;
+    }
 
     &-right {
       display: flex;
@@ -43,7 +41,8 @@
       }
 
       .gpt-summary__icon {
-        margin-right: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
       }
     }
   }
@@ -51,18 +50,18 @@
   &__title {
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 16px;
   }
 
   &__description {
-    font-size: 12px;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    padding:  0 15px;
+    font-size: 10px;
+    line-height: 11.88px;
+    padding: 20px;
+    font-weight: 300;
 
     .gpt-summary__link {
       color: #005864;
       text-decoration: none;
+      font-weight: 500;
 
       &:hover {
         text-decoration: underline;
@@ -92,16 +91,11 @@
         margin-right: 5;
       }
 
-
       .gpt-summary__footer-text {
         color: #a0a0a0;
         cursor: pointer;
         font-size: 10px;
-        }
       }
     }
-  
+  }
 }
-
-
-  

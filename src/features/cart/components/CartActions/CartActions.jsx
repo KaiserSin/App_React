@@ -55,8 +55,6 @@ const CartActions = () => {
           <span className="cart-actions__text">Заменить недоступные</span>
         </div>
       </div>
-
-      <hr className="cart-actions__divider" />
     </div>
   );
 };

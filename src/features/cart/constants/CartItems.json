@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Игровая мышь E-YOOSO",
+    "name": "Игровая мышь “E-YOOSO”",
     "price": "1903₽",
     "status": { "available": true, "ends": false },
     "quantity": 1,
@@ -18,7 +18,7 @@
   },
   {
     "id": "2",
-    "name": "Игровая мышь E-YOOSO",
+    "name": "Игровая мышь “E-YOOSO”",
     "price": "1903₽",
     "status": { "available": true, "ends": true },
     "quantity": 1,
@@ -29,7 +29,7 @@
   },
   {
     "id": "3",
-    "name": "Игровая мышь E-YOOSO",
+    "name": "Игровая мышь “E-YOOSO”",
     "price": "1903₽",
     "status": { "available": true, "ends": false },
     "quantity": 1,
@@ -40,7 +40,7 @@
   },
   {
     "id": "4",
-    "name": "Игровая мышь E-YOOSO",
+    "name": "Игровая мышь “E-YOOSO”",
     "price": "1903₽",
     "status": { "available": false, "ends": false },
     "quantity": 1,
