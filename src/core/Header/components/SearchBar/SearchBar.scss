@@ -6,6 +6,9 @@
   display: flex;
   gap: 15px;
   box-shadow: 2px 2px 3.5px 0px rgba(0, 0, 0, 0.35);
+  @media screen and (max-width: 886px) {
+    justify-content: space-between;
+  }
   &__input {
     flex: 1 1 auto;
     font-size: 18px;
@@ -14,6 +17,10 @@
     border: 0 #000;
     margin-bottom: 0;
     font-weight: 400;
+    @media screen and (max-width: 886px) {
+      font-size: 13px;
+      max-width: 120px;
+    }
   }
 }
 
@@ -47,6 +54,10 @@
     color: #222;
     padding: 10px 20px;
     display: block;
+  }
+  @media screen and (max-width: 886px) {
+    display: none;
+    font-size: 12px;
   }
 }
 

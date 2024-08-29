@@ -1,28 +1,20 @@
 import Button from "@/shared/components/Buttons/Button/Button";
 import IconWithNotification from "@/shared/components/IconWithNotification/IconWithNotification";
 import Logo from "@/shared/components/Logo/Logo";
-import { useDispatch, useSelector } from "react-redux";
+
 import { Link } from "react-router-dom";
-import { setCatalogVisible } from "../../../../redux/reducers/catalogSlice";
+
 import SearchBar from "../SearchBar/SearchBar";
 
 function LowerHeader() {
-  const { isCatalogVisible } = useSelector((state) => {
-    return state.catalog;
-  });
-
-  const dispatch = useDispatch();
-
-  const toggleCatalog = () => {
-    dispatch(setCatalogVisible(!isCatalogVisible));
-  };
-
   return (
     <div className="lower-header">
       <div className="lower-header__container">
         <div className="lower-header__body">
           <Logo />
-          <Button onClick={toggleCatalog}>Каталог</Button>
+          <Button>
+            <Link to={"/catalog"}>Каталог</Link>
+          </Button>
           <SearchBar
             placeholder="Найдется все"
             dropDownLabel="Категория"
