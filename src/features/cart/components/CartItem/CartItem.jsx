@@ -25,13 +25,7 @@ const CartItem = ({
     <>
       <div>
         <div
-          className={
-            status.ends
-              ? "cart-items__product"
-              : status.available
-              ? "cart-items__product"
-              : "cart-items__product--pale"
-          }
+          className={`cart-items__product ${status.available ? "" : "pale"}`}
         >
           <div className="cart-items__controls">
             <img
