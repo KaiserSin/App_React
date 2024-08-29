@@ -1,0 +1,52 @@
+.cart-page__title {
+  margin: 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42.24px;
+  color: #171717;
+  margin: 0;
+}
+
+.cart-page {
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  gap: 36px;
+
+  &__grid {
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+  }
+
+  &__side {
+    display: grid;
+    max-width: 467px;
+    grid-gap: 20px;
+  }
+}
+
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 33px;
+  max-width: 1600px;
+}
+
+.product-strip {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

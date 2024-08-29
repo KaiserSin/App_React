@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Moon from "@assets/images/nightMode/moon.svg";
+import "./UpperHeader.scss";
+import map from "@assets/images/map.png";
+import openPvz from "@assets/images/open-pvz.png";
 
 function UpperHeader() {
   const [isNightMode, setIsNightMode] = useState(false);
@@ -32,22 +35,21 @@ function UpperHeader() {
               🏠 Москва: Пушкина 10
             </Link>
             <Link to={"/"} className="upper-header__link">
-              ❤️ Продавайте у нас
-            </Link>
-            <Link to={"/"} className="upper-header__link">
               💼 Наши вакансии
             </Link>
             <Link to={"/"} className="upper-header__link">
               🏢 Покупать как компания
             </Link>
             <Link to={"/"} className="upper-header__link">
-              🔥 Франшиза
+              ❤️ Продавайте у нас
             </Link>
             <Link to={"/"} className="upper-header__link">
-              📍 Пункты выдачи
+              <img src={map} alt="map" />
+              <span>Карта ПВЗ</span>
             </Link>
             <Link to={"/"} className="upper-header__link">
-              🛟 Поддержка
+              <img src={openPvz} alt="" />
+              <span>Открыть ПВЗ</span>
             </Link>
           </nav>
           <button className="theme w-inline-block" onClick={toggleTheme}>

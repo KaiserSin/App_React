@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Игровая мышь “E-YOOSO”",
+    "price": "1903₽",
+    "oldprice": "4500₽",
+    "discount": "-55%",
+    "image_url": "./src/assets/images/cartImages/mouse-white.png",
+    "rating": "4.5 / 5",
+    "reviews": "11к отзывов"
+  },
+  {
+    "id": "2",
+    "name": "Игровая мышь “E-YOOSO”",
+    "price": "1903₽",
+    "oldprice": "4500₽",
+    "discount": "-55%",
+    "image_url": "./src/assets/images/cartImages/Card.png",
+    "rating": "4.5 / 5",
+    "reviews": "11к отзывов"
+  },
+  {
+    "id": "3",
+    "name": "Игровая мышь “E-YOOSO”",
+    "price": "1903₽",
+    "oldprice": "4500₽",
+    "discount": "-55%",
+    "image_url": "./src/assets/images/cartImages/mouse-red.png",
+    "rating": "4.5 / 5",
+    "reviews": "11к отзывов"
+  },
+  {
+    "id": "4",
+    "name": "Игровая мышь “E-YOOSO”",
+    "price": "1903₽",
+    "oldprice": "4500₽",
+    "discount": "-55%",
+    "image_url": "./src/assets/images/cartImages/mouse-white.png",
+    "rating": "4.5 / 5",
+    "reviews": "11к отзывов"
+  },
+  {
+    "id": "5",
+    "name": "Игровая мышь “E-YOOSO”",
+    "price": "1903₽",
+    "oldprice": "4500₽",
+    "discount": "-55%",
+    "image_url": "./src/assets/images/cartImages/good-red.png",
+    "rating": "4.5 / 5",
+    "reviews": "11к отзывов"
+  }
+]
