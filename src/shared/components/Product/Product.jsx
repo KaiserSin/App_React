@@ -8,13 +8,13 @@ const Product = ({
   price,
   oldprice,
   discount,
-  image_url,
+  imageUrl,
   rating,
   reviews,
 }) => {
   return (
     <div key={id} className="product-card">
-      <img src={image_url} alt={name} className="product-card__image" />
+      <img src={imageUrl} alt={name} className="product-card__image" />
 
       <div className="product-card__rating-reviews">
         <span className="product-card__star">

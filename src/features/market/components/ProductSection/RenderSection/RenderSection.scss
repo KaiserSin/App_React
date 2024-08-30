@@ -1,20 +1,21 @@
-
 .itemssection {
   min-height: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
   padding: 0 20px;
-  }
-  
-  .itemsbg {
-    background-color: #fff;
-    border-radius: 20px;
-    max-width: 1600px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    overflow: auto;
-    background-color: #f9f9f9;
-  }
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.itemsbg {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
