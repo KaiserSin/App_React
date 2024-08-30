@@ -19,13 +19,13 @@ const Footer = () => {
               <img className="footer-socials__img" src="/icons/telegram.svg" alt="social icon" />
             </a>
             <a href="#" className="footer-socials__item">
-              <img lassName="footer-socials__img" src="/icons/in.svg" alt="social icon" />
+              <img className="footer-socials__img" src="/icons/in.svg" alt="social icon" />
             </a>
             <a href="#" className="footer-socials__item">
-              <img lassName="footer-socials__img" src="/icons/x.svg" alt="social icon" />
+              <img className="footer-socials__img" src="/icons/x.svg" alt="social icon" />
             </a>
             <a href="#" className="footer-socials__item">
-              <img lassName="footer-socials__img" src="/icons/youtube.svg" alt="social icon" />
+              <img className="footer-socials__img" src="/icons/youtube.svg" alt="social icon" />
             </a>
           </div>
           <div className="footer__alt-project">Проект компании Alt</div>
@@ -33,12 +33,12 @@ const Footer = () => {
         <div className="footer-links">
           {footerLinks.map((column) => {
             return (
-              <div className="footer-links__item">
+              <div key= {column.title}className="footer-links__item">
                 <div className="footer-links__title">{column.title}</div>
                 <ul className="footer-links-list">
                   {column.links.map((link) => {
                     return (
-                      <li className="footer-links-list__item">
+                      <li key = {link.text} className="footer-links-list__item">
                         <Link to={link.to}>{link.text}</Link>
                       </li>
                     );
