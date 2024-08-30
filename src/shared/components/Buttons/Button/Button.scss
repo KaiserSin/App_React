@@ -1,14 +1,13 @@
 .button {
   color: #005864;
-  background-color: #3898ec00;
+  background-color: white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   font-weight: 600;
-  box-shadow: 0 2px 5px #0003;
   padding: 10px 20px;
-  cursor: pointer;
   box-shadow: 2px 2px 3.5px 0px rgba(0, 0, 0, 0.35);
 }
 
