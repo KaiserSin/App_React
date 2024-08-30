@@ -2,6 +2,7 @@ import toBin from "@assets/images/cartImages/toBin.svg";
 import yellowLightning from "@assets/images/cartImages/yellowLightning.svg";
 import star from "@assets/images/cartImages/Star.svg";
 
+
 import Button from "@shared/components/Buttons/Button/Button";
 
 import "./Product.scss";

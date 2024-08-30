@@ -5,7 +5,9 @@ import "./Button.scss";
 const Button = (props) => {
   const { children, className, color, ...otherProps } = props;
   return (
-    <button {...otherProps} className={`button ${className ? className : ""} button--color--${color}`}>
+    <button
+      {...otherProps}
+      className={`button ${className ? className : ""} ${color ? `button--color--${color}` : ""}`}>
       {children}
     </button>
   );

@@ -4,30 +4,29 @@ import AdSectionTwo from "../../Advertisement/AdvertisementSectionTwo";
 import { SliderSection } from "../../Advertisement/SliderSection.jsx";
 import ScrollToBottom from "../../ScrollToBottom/ScrollToBottom.jsx";
 import { RenderSec } from "../RenderSection/RenderSection.jsx";
-import ProductStrip from '@shared/components/ProductStrip/ProductStrip';
+import ProductStrip from "@shared/components/ProductStrip/ProductStrip";
 
-
-const Content = ({products, progress, show}) => {
-  const sections = RenderSec({products});
+const Content = ({ products, progress, show }) => {
+  const sections = RenderSec({ products });
   if (show) {
-    return(
-      <div className='content'>
-        <Catalog/>
+    return (
+      <div className="content">
+        <Catalog />
       </div>
     );
   } else {
-    return(
+    return (
       <div className="content">
-      <SliderSection />
-      {sections[0]}
-      <AdSectionTwo progress={progress} />
-      {sections[1]}
-      <AdSectionThree />
-      {sections[2]}
-      <ScrollToBottom />
-    </div>
+        <SliderSection />
+        {sections[0]}
+        <AdSectionTwo progress={progress} />
+        {sections[1]}
+        <AdSectionThree />
+        {sections[2]}
+        <ScrollToBottom />
+      </div>
     );
   }
-}
+};
 
 export { Content };

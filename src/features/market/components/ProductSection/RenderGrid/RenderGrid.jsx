@@ -1,37 +1,42 @@
 import React from "react";
 import { Product } from "../Product/Product";
-
 import "./RenderGrid.scss";
 
 const RenderGrid = ({ products }) => {
   const rows = products.reduce((acc, product, index) => {
-    const gridIndex = Math.floor(index / 6);
+    const gridIndex = Math.floor(index / 5);
     if (!acc[gridIndex]) acc[gridIndex] = [];
     acc[gridIndex].push(
       <Product
         key={`${product.id}-${index}`}
         id={product.id}
+        name={product.name}
+        price={product.price}
+        oldPrice={product.oldPrice}
+        discount={product.discount}
         imageUrl={product.imageUrl}
-        currentPrice={product.cost}
-        oldPrice={product.oldCost}
-        text={product.name}
+        rating={product.rating}
+        reviews={product.reviews}
       />
     );
     return acc;
   }, []);
 
   const lastRow = rows[rows.length - 1];
-  if (lastRow && lastRow.length < 6) {
+  if (lastRow && lastRow.length < 5) {
     let i = 0;
-    while (lastRow.length < 6) {
+    while (lastRow.length < 5) {
       lastRow.push(
         <Product
           key={`${lastRow[i].props.id}-duplicate-${i}`}
           id={`${lastRow[i].props.id}-duplicate`}
-          imageUrl={lastRow[i].props.imageUrl}
-          currentPrice={lastRow[i].props.currentPrice}
+          name={lastRow[i].props.name}
+          price={lastRow[i].props.price}
           oldPrice={lastRow[i].props.oldPrice}
-          text={lastRow[i].props.text}
+          discount={lastRow[i].props.discount}
+          imageUrl={lastRow[i].props.imageUrl}
+          rating={lastRow[i].props.rating}
+          reviews={lastRow[i].props.reviews}
         />
       );
       i++;
