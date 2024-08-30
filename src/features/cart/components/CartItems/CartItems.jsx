@@ -1,5 +1,4 @@
-import React from "react";
-import cartItems from "@features/cart/constants/CartItems.json";
+import cartItems from "@api/cartItems.json";
 import CartItem from "../CartItem/CartItem";
 
 const CartItems = () => {

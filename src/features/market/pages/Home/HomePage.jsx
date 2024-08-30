@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import api from "@/services/items";
+import api from "@api/items";
 import { Content } from "@features/market/components/ProductSection/ContentStrip/Content";
 
 const HomePage = () => {

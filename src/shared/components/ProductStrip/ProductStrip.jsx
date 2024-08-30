@@ -1,9 +1,8 @@
-import React from "react";
 import "./ProductStrip.scss";
-import recommendations from "@shared/composables/constants/productStrip.json";
+import recommendations from "@api/products.json";
 import Product from "../Product/Product";
 
-const ProductStrip = ({}) => {
+const ProductStrip = () => {
   return (
     <div className="product-card-container">
       {recommendations.map((item, index) => (

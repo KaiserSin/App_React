@@ -1,4 +1,3 @@
-import React from "react";
 import greenbox from "@assets/images/cartImages/greenbox.svg";
 import redtrashbin from "@assets/images/cartImages/redtrashbin.svg";
 import razer from "@assets/images/cartImages/razer.svg";

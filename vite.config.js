@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 const resolveAlias = (p) => resolve(__dirname, p);
 const alias = {
   "@": resolveAlias("./src"),
+  "@api": resolveAlias("./src/api"),
   "@assets": resolveAlias("./src/assets"),
   "@shared": resolveAlias("./src/shared"),
   "@features": resolveAlias("./src/features"),
