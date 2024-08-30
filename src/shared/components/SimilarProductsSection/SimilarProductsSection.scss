@@ -1,0 +1,21 @@
+.similar-products {
+  &__title {
+  }
+  &__container {
+    padding-block: 100px;
+  }
+  &__body {
+    margin-top: 20px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.65);
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+}
