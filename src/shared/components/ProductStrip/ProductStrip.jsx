@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProductStrip.scss";
 import recommendations from "@shared/composables/constants/productStrip.json";
-import Product from "../Product/Product";
+import { Product } from "../Product/Product";
 
 const ProductStrip = ({}) => {
   return (

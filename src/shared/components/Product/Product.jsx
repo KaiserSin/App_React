@@ -1,27 +1,36 @@
-import toBin from "@assets/images/cartImages/toBin.svg";
-import yellowLightning from "@assets/images/cartImages/yellowLightning.svg";
 import star from "@assets/images/cartImages/Star.svg";
-
-
 import Button from "@shared/components/Buttons/Button/Button";
-
 import "./Product.scss";
 import AnimatedLike from "../AnimatedLike/AnimatedLike";
 import { useState } from "react";
 
-const Product = (props) => {
-  const [isLiked, setIsLiked] = useState(false);
-  const { classes, id, name, price, oldPrice, discount, image_url, rating, reviews } = props;
+export const Product = ({
+  classes,
+  id,
+  name,
+  price,
+  oldPrice,
+  discount,
+  imageUrl,
+  rating,
+  reviews,
+  liked,
+}) => {
+  const [isLiked, setIsLiked] = useState(liked);
 
   return (
-    <div key={id} className={`product-card ${classes?.root ? classes.root : ""}`}>
+    <div
+      key={id}
+      className={`product-card ${classes?.root ? classes.root : ""}`}
+    >
       <div className="product-card__block-img">
-        <img src={image_url} alt={name} className="product-card__image" />
+        <img src={imageUrl} alt={name} className="product-card__image" />
         <button
           onClick={() => {
             setIsLiked(!isLiked);
           }}
-          className="product-card__like">
+          className="product-card__like"
+        >
           <AnimatedLike isLiked={isLiked} />
         </button>
       </div>
@@ -60,5 +69,3 @@ const Product = (props) => {
     </div>
   );
 };
-
-export default Product;

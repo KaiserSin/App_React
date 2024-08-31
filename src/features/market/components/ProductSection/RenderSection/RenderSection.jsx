@@ -41,12 +41,12 @@ const RenderSec = ({ products }) => {
       </section>
     );
 
-    if (grids.length > 3) {
+    if (grids.length > 4) {
       console.log("4");
       answer.push(
         <section key="itemssec3" className="itemssection">
           <div key="itemsbg3" className="itemsbg">
-            {grids.slice(2)}
+            {grids.slice(3)}
           </div>
         </section>
       );

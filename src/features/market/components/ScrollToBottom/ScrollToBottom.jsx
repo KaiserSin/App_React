@@ -4,7 +4,7 @@ import ScrollButton from "@assets/images/scrollToBottom/ScrollToBottom.svg";
 
 const ScrollToBottom = () => {
   const [scrolling, setScrolling] = useState(false);
-  const [isOverFooter, setIsOverFooter] = useState(false); 
+  const [isOverFooter, setIsOverFooter] = useState(false);
   const footerRef = useRef(null);
   let renderTimeout = useRef(null);
 
@@ -18,13 +18,13 @@ const ScrollToBottom = () => {
 
     renderTimeout.current = setTimeout(() => {
       setScrolling(false);
-    }, 1250);
+    }, 1750);
   };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsOverFooter(entry.isIntersecting); 
+        setIsOverFooter(entry.isIntersecting);
       },
       {
         root: null,
@@ -47,7 +47,7 @@ const ScrollToBottom = () => {
   useEffect(() => {
     if (scrolling) {
       const scrollInterval = setInterval(() => {
-        window.scrollBy(0, 50);
+        window.scrollBy(0, 40);
       }, 10);
 
       return () => clearInterval(scrollInterval);
@@ -55,7 +55,10 @@ const ScrollToBottom = () => {
   }, [scrolling]);
 
   return (
-    <div className={`scroll-to-bottom ${isOverFooter ? "over-footer" : ""}`} onClick={scrollToBottom}>
+    <div
+      className={`scroll-to-bottom ${isOverFooter ? "over-footer" : ""}`}
+      onClick={scrollToBottom}
+    >
       <img src={ScrollButton} alt="Scroll to Bottom" />
       <footer ref={footerRef} />
     </div>
@@ -63,5 +66,3 @@ const ScrollToBottom = () => {
 };
 
 export default ScrollToBottom;
-
-

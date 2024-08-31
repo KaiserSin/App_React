@@ -1,6 +1,6 @@
 import React from "react";
-import { Product } from "../Product/Product";
 import "./RenderGrid.scss";
+import { Product } from "@shared/components/Product/Product";
 
 const RenderGrid = ({ products }) => {
   const rows = products.reduce((acc, product, index) => {
