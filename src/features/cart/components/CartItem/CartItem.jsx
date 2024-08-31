@@ -40,7 +40,9 @@ const CartItem = ({
               className="cart-items__icon"
             />
           </div>
+          <div className="place-for-image">
           <img src={image_url} alt={name} className="cart-items__image" />
+          </div>
           <div className="third-column">
             <div className="cart-items__details">
               <div className="cart-items__info">

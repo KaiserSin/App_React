@@ -333,3 +333,19 @@
 .pale {
   opacity: 0.5;
 }
+
+.cart-items__image {
+  width: 101px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.place-for-image {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
