@@ -14,7 +14,7 @@ const HomePage = () => {
     const fetchData = async () => {
       const sizeData = await api.getSize();
       size = sizeData + 40;
-      const items = await api.getItems(41, 46);
+      const items = await api.getItems(41, 50);
       console.log(items);
       setProducts(items.map((val) => ({ ...val, isFiltered: true })));
     };
