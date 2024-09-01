@@ -24,7 +24,8 @@ export const Product = ({
       <Link to={`/product/${id}`} className="product-card__block-img">
         <img src={imageUrl} alt={name} className="product-card__image" />
         <button
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             setIsLiked(!isLiked);
           }}
           className="product-card__like">

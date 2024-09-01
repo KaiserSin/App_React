@@ -14,8 +14,6 @@ $grid-row-max: 417px;
   place-items: stretch stretch;
   max-width: calc((5 * #{$grid-column-max}) + (4 * #{$grid-gap}));
 
-  overflow: hidden;
-
   @media screen and (max-width: 991px) {
     grid-template-columns: 3fr;
   }
