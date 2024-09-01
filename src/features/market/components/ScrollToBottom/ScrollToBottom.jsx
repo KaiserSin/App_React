@@ -47,7 +47,7 @@ const ScrollToBottom = () => {
   useEffect(() => {
     if (scrolling) {
       const scrollInterval = setInterval(() => {
-        window.scrollBy(0, 40);
+        window.scrollBy(0, 60);
       }, 10);
 
       return () => clearInterval(scrollInterval);
