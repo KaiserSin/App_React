@@ -6,6 +6,8 @@ import exclamation from "@assets/images/cartImages/exclamation.svg";
 import dolyami from "@assets/images/cartImages/dolyami.svg";
 import arrow from "@assets/images/cartImages/arrow.svg";
 import trashbin from "@assets/images/cartImages/trashcan.svg";
+import Label from "@shared/components/Label/Label";
+import { Link } from "react-router-dom";
 import "./DeliveryInfo.scss";
 
 const DeliveryInfo = () => {
@@ -16,12 +18,14 @@ const DeliveryInfo = () => {
         <div className="delivery-info__summary">
           <span className="delivery-info__items">4 товара · 1 кг</span>
           <div className="delivery-info__bonus">
-            <img
-              src={crown}
-              alt="Bonus Icon"
-              className="delivery-info__bonus-icon"
-            />
-            <span>150 бонусов в сумме</span>
+            <button className="text-button">
+              <img
+                src={crown}
+                alt="Bonus Icon"
+                className="delivery-info__bonus-icon"
+              />
+              <span>150 бонусов в сумме</span>
+            </button>
           </div>
         </div>
       </div>
