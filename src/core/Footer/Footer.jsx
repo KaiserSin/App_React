@@ -33,12 +33,12 @@ const Footer = () => {
         <div className="footer-links">
           {footerLinks.map((column) => {
             return (
-              <div key= {column.title}className="footer-links__item">
+              <div key={column.title} className="footer-links__item">
                 <div className="footer-links__title">{column.title}</div>
                 <ul className="footer-links-list">
                   {column.links.map((link) => {
                     return (
-                      <li key = {link.text} className="footer-links-list__item">
+                      <li key={link.text} className="footer-links-list__item">
                         <Link to={link.to}>{link.text}</Link>
                       </li>
                     );

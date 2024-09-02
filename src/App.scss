@@ -8,6 +8,11 @@
   --color-turquoise: rgb(0, 88, 100);
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-size: 16px;
   font-family: "Jetbrainsmono";
@@ -31,4 +36,14 @@ img {
   max-width: 1640px;
   padding-inline: 20px;
   margin: 0 auto;
+}
+
+#root {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

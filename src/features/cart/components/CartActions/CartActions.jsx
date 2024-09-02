@@ -12,13 +12,17 @@ const CartActions = () => {
     <div className="cart-actions">
       <div className="cart-actions__row cart-actions__row--top">
         <div className="cart-actions__side cart-actions__side--left">
-          <img src={pen} alt="Pen Icon" className="cart-actions__icon" />
-          <span className="cart-actions__text">Подарки</span>
-          <img
-            src={collect}
-            alt="Collect Icon"
-            className="cart-actions__icon-collect"
-          />
+          <div className="presents">
+            <img src={pen} alt="Pen Icon" className="cart-actions__icon" />
+            <span className="cart-actions__text">Подарки</span>
+          </div>
+          <div className="image-icon">
+            <img
+              src={collect}
+              alt="Collect Icon"
+              className="cart-actions__icon-collect"
+            />
+          </div>
         </div>
         <div className="cart-actions__side cart-actions__side--right">
           <img src={share} alt="Share Icon" className="cart-actions__icon" />
