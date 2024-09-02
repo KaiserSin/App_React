@@ -88,7 +88,12 @@
       .cart-items__price {
         color: rgba(218, 0, 0, 1);
         font-weight: 700;
-        padding-top: 10px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 6px 16px;
       }
 
       .cart-items__action-icon-star {
@@ -261,15 +266,12 @@
 
       .cart-items__price--green {
         font-size: 18px;
-        margin-bottom: 10px;
         color: rgba(0, 192, 51, 1);
       }
 
       &__price {
         font-size: 18px;
-        margin-bottom: 10px;
         color: rgba(0, 192, 51, 1);
-        padding-top: 10px;
 
         &--green {
           color: #28a745;
@@ -290,11 +292,11 @@
 
 .cart-items__price--green {
   font-size: 18px;
-  margin-bottom: 10px;
   color: rgba(0, 192, 51, 1);
   font-weight: 700;
-  padding-top: 10px;
-  background-color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
+  padding: 6px 16px;
+  border-radius: 6px;
 }
 
 .commodity-info {
