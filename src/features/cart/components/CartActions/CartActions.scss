@@ -39,8 +39,6 @@
         align-items: center;
         background-color: rgba(249, 249, 249, 1);
 
-        cursor: pointer;
-
         &--left {
           .cart-actions__icon {
             cursor: pointer;
@@ -113,10 +111,6 @@
     border-top: 1px solid #e5e5e5;
     margin-top: 10px;
   }
-}
-
-.cart-actions__action {
-  cursor: pointer;
 }
 
 .cart-actions__count {
