@@ -53,5 +53,16 @@
     "rating": "4.5 / 5",
     "reviews": "11к отзывов",
     "liked": true
+  },
+  {
+    "id": "6",
+    "name": "Игровая мышь “E-YOOSO”",
+    "price": "1903₽",
+    "oldPrice": "4500₽",
+    "discount": "-55%",
+    "imageUrl": "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ac44a60bd51bac3ca46333_6481126109%201.png",
+    "rating": "4.5 / 5",
+    "reviews": "11к отзывов",
+    "liked": true
   }
 ]
