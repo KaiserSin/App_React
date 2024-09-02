@@ -9,7 +9,12 @@ function SearchBar(props) {
   return (
     <div className={`search-bar ${classes?.root ? classes.root : ""}`}>
       <DropDown label={dropDownLabel} items={dropDownItems} />
-      <input className="search-bar__input" maxLength="256" placeholder={placeholder} type="text" />
+      <input
+        className="search-bar__input"
+        maxLength="256"
+        placeholder={placeholder}
+        type="text"
+      />
       <div className="search-bar-actions">
         <button className="search-bar-actions__item">
           <img
