@@ -21,7 +21,7 @@ const CartPage = () => {
             {/* <ArtificialText /> */}
             <SwiftMartAIBlock
               title="Сводка от GPT"
-              classes={{ root: "product-section-cart__ai-block" }}
+              classes={{ root: "cart-ai-block" }}
             >
               Бесшумные кнопки мыши делают ее использование более комфортным во
               время длительных игровых сессий. Горизонтальная прокрутка

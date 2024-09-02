@@ -32,7 +32,9 @@
 
   &__buttons {
     display: grid;
-    grid-template-columns: calc(179 / 376 * 100%) calc(133 / 376 * 100%) calc(40 / 376 * 100%);
+    grid-template-columns: calc(179 / 376 * 100%) calc(133 / 376 * 100%) calc(
+        40 / 376 * 100%
+      );
     gap: 16px;
     margin-top: 16px;
   }

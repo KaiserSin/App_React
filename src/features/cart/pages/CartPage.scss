@@ -1,5 +1,4 @@
 .cart-full-page {
-  box-shadow: 0px 0px 15px 0px #0000001a inset;
   background-color: #f9f9f9;
 }
 
@@ -52,4 +51,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.cart-ai-block {
+  max-width: 467px;
 }
