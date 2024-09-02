@@ -4,7 +4,7 @@ import { Product } from "@shared/components/Product/Product";
 
 const RenderGrid = ({ products }) => {
   const rows = products.reduce((acc, product, index) => {
-    const gridIndex = Math.floor(index / 5);
+    const gridIndex = Math.floor(index / 6);
     if (!acc[gridIndex]) acc[gridIndex] = [];
     acc[gridIndex].push(
       <Product
@@ -23,9 +23,9 @@ const RenderGrid = ({ products }) => {
   }, []);
 
   const lastRow = rows[rows.length - 1];
-  if (lastRow && lastRow.length < 5) {
+  if (lastRow && lastRow.length < 6) {
     let i = 0;
-    while (lastRow.length < 5) {
+    while (lastRow.length < 6) {
       lastRow.push(
         <Product
           key={`${lastRow[i].props.id}-duplicate-${i}`}

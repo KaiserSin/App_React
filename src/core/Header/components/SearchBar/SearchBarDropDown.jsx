@@ -11,8 +11,9 @@ function SearchBarDropDown({ label, items }) {
       <button
         className={`search-bar-dropdown__toggle`}
         onClick={() => {
-          setIsOpen((prev) => !prev);
-        }}>
+          setIsOpen((prev) => prev);
+        }}
+      >
         <div>{label}</div>
       </button>
       {isOpen && (

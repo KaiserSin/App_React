@@ -1,7 +1,6 @@
 .animated-like {
-  transition: 0.3s ease;
-  fill: #ffffff;
-  &--liked {
-    fill: #ef0000;
+  &,
+  * {
+    transition: all 0.5s ease;
   }
 }
