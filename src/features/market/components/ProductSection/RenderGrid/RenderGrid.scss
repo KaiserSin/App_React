@@ -1,39 +1,12 @@
-// $grid-gap: 33px;
-// $grid-column-min: 180px;
-// $grid-column-max: 260px;
-// $grid-row-min: 200px;
-// $grid-row-max: 417px;
-
-// .itemsgrid {
-//   display: grid;
-//   grid-row-gap: $grid-gap;
-//   grid-column-gap: $grid-gap;
-//   grid-template-rows: minmax(auto, auto);
-//   grid-template-columns: repeat(5, minmax($grid-column-min, $grid-column-max));
-//   grid-auto-flow: row;
-//   place-items: stretch stretch;
-//   max-width: calc((6 * #{$grid-column-max}) + (5 * #{$grid-gap}));
-
-//   @media screen and (max-width: 991px) {
-//     grid-template-columns: 3fr;
-//   }
-
-//   @media screen and (max-width: 767px) {
-//     grid-template-columns: 2fr;
-//   }
-
-//   @media screen and (max-width: 479px) {
-//     grid-template-columns: 1fr;
-//   }
-// }
 .itemsgrid {
+  padding: 10px;
+  border-radius: 30px;
   margin: 0 auto;
   display: flex;
-  gap: 30px;
+  gap: 32px;
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
-  padding-bottom: 10px;
 }
 
 .itemsgrid::-webkit-scrollbar {
