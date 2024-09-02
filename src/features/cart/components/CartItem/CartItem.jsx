@@ -22,7 +22,7 @@ const CartItem = ({
 }) => {
   return (
     <>
-      <div>
+      <div className="background-item">
         <div
           className={`cart-items__product ${status.available ? "" : "pale"} ${
             additionalInfo ? "has-additional-info" : ""
@@ -41,7 +41,7 @@ const CartItem = ({
             />
           </div>
           <div className="place-for-image">
-          <img src={image_url} alt={name} className="cart-items__image" />
+            <img src={image_url} alt={name} className="cart-items__image" />
           </div>
           <div className="third-column">
             <div className="cart-items__details">
@@ -67,19 +67,20 @@ const CartItem = ({
               </div>
             </div>
             <div className="cart-items__actions">
-              <div>
+              <div className="list-of-actions">
                 <img
                   src={heart}
                   alt="Heart Icon"
                   className="cart-items__action-icon"
                 />
-
-                <img
-                  src={lightning}
-                  alt="Heart Icon"
-                  className="cart-items__action-icon-lightning"
-                />
-                <button className="cart-items__order-button">Заказать</button>
+                <div className="grey-background">
+                  <img
+                    src={lightning}
+                    alt="Heart Icon"
+                    className="cart-items__action-icon-lightning"
+                  />
+                  <button className="cart-items__order-button">Заказать</button>
+                </div>
               </div>
 
               <div className="paragraph-status">
@@ -96,22 +97,26 @@ const CartItem = ({
 
           <div className="fourth-column">
             <div className="cart-items__pricing">
-              <p
-                className={
-                  sellout ? "cart-items__price" : "cart-items__price--green"
-                }
-              >
-                {price}
-              </p>
+              <div className="for-text-background">
+                <p
+                  className={
+                    sellout ? "cart-items__price" : "cart-items__price--green"
+                  }
+                >
+                  {price}
+                </p>
+              </div>
             </div>
 
-            <div className="cart-items__quantity-rating">
-              <button className="cart-items__quantity-btn"> - </button>
-              <span>{quantity}</span>
-              <button className="cart-items__quantity-btn"> + </button>
+            <div className="new-quantity">
+              <div className="cart-items__quantity-rating">
+                <button className="cart-items__quantity-btn"> - </button>
+                <span>{quantity}</span>
+                <button className="cart-items__quantity-btn"> + </button>
+              </div>
             </div>
 
-            <div>
+            <div className="rating-number">
               <span className="cart-items__rating">
                 <img
                   src={star}
