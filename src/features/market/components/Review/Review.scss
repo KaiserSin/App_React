@@ -72,6 +72,8 @@
   margin-top: 20px;
   background: rgb(249, 249, 249);
 
+font-size: 14px;
+
   &__text {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -114,6 +116,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  font-size: 14px;
   &__stars {
     display: flex;
     align-items: center;
