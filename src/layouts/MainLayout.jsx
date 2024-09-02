@@ -6,12 +6,13 @@ import Main from "@core/Main/Main";
 const MainLayout = () => {
   return (
     <>
-      <Header />
-      <Main>
-        {" "}
-        <Outlet />
-      </Main>
-      <Footer />
+      <div className="wrapper">
+        <Header />
+        <Main>
+          <Outlet />
+        </Main>
+        <Footer />
+      </div>
     </>
   );
 };
