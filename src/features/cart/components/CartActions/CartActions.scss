@@ -5,6 +5,9 @@
   padding-bottom: 20px;
   border-radius: 25px;
   position: relative;
+  padding-top: 25px;
+  padding: 21px;
+
   &::after {
     content: "";
     position: absolute;
@@ -26,6 +29,7 @@
       padding-top: 25px;
       padding-left: 21px;
       padding-right: 21px;
+      border-radius: 12px;
     }
 
     &--top,
@@ -34,13 +38,11 @@
         display: flex;
         align-items: center;
         background-color: rgba(249, 249, 249, 1);
-        // margin-top: 25px;
+
         cursor: pointer;
 
         &--left {
           .cart-actions__icon {
-            // margin-right: 10px;
-            // margin-left: 40px;
             cursor: pointer;
           }
         }
@@ -70,11 +72,8 @@
 
   &__row--top {
     background-color: rgba(249, 249, 249, 1);
-    padding-top: 25px;
-    background-clip: content-box;
-    padding-left: 21px;
-    padding-right: 21px;
     border-radius: 12px;
+    padding: 9px;
   }
 
   &__row--middle {
@@ -129,15 +128,11 @@
   height: 40px;
   width: 150px;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 6px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 1);
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-clip: content-box;
+  padding: 8px 21px;
 }
 
 .image-icon {

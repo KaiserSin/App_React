@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   border-radius: 25px;
+  padding-bottom: 29px;
 
   &__product {
     display: flex;
@@ -9,11 +10,12 @@
     margin-left: 21px;
     margin-top: 20px;
     background-color: #fff;
-    border-radius: 8px;
     position: relative;
     gap: 35px;
     background-color: rgba(251, 251, 251, 1);
     background-clip: content-box;
+    order: 1;
+    border-radius: 10px 10px 0px 0px;
 
     &.has-additional-info {
       position: relative;
@@ -328,7 +330,7 @@
 }
 
 .pale {
-  opacity: 0.5;
+  background-color: rgba(218, 218, 218, 0.084);
 }
 
 .cart-items__image {
@@ -354,7 +356,17 @@
 }
 
 .background-item {
+  display: flex;
+  flex-direction: column;
   border-radius: 15px;
+}
+
+.background-item:has(.pale) .cart-items__product {
+  border-radius: 10px 10px 0px 0px;
+  border-top: 1px dashed rgba(218, 218, 218, 1);
+  border-left: 1px dashed rgba(218, 218, 218, 1);
+  border-right: 1px dashed rgba(218, 218, 218, 1);
+  border-bottom: none;
 }
 
 .list-of-actions {
@@ -373,4 +385,12 @@
 
 .list-of-actions {
   padding-bottom: 10px;
+}
+
+.background-item:last-of-type .cart-items__controls,
+.background-item:last-of-type .place-for-image,
+.background-item:last-of-type .fourth-column,
+.background-item:last-of-type .cart-items__details,
+.background-item:last-of-type .grey-background {
+  opacity: 0.5;
 }

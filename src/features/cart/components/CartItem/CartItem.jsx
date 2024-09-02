@@ -23,6 +23,7 @@ const CartItem = ({
   return (
     <>
       <div className="background-item">
+        {additionalInfo ? <AdditionalInfo {...additionalInfo} /> : ""}
         <div
           className={`cart-items__product ${status.available ? "" : "pale"} ${
             additionalInfo ? "has-additional-info" : ""
@@ -128,7 +129,6 @@ const CartItem = ({
             </div>
           </div>
         </div>
-        {additionalInfo ? <AdditionalInfo {...additionalInfo} /> : ""}
       </div>
     </>
   );
