@@ -75,7 +75,8 @@
 }
 
 .reviews-items {
-  overflow: auto;
+  padding: 10px 0px;
+  overflow-x: auto;
   display: flex;
   align-items: stretch;
   gap: 30px;
