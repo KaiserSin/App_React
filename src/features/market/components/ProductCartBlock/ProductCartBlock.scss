@@ -7,10 +7,11 @@
     background: rgb(255, 255, 255);
     padding: 20px;
   }
+
   &__header {
   }
   &__title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
   }
   &__cost-history {
@@ -49,11 +50,12 @@
   &__ai-block {
     margin-top: 20px;
   }
+  &__price-trend {
+  }
 }
 
 .product-section-cart-price {
   display: flex;
-  align-items: center;
   gap: 15px;
   &__text {
   }
