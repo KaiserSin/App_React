@@ -3,7 +3,7 @@ import Button from "@shared/components/Buttons/Button/Button";
 import "./Product.scss";
 import AnimatedLike from "../AnimatedLike/AnimatedLike";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Product = ({
   classes,
@@ -20,7 +20,10 @@ export const Product = ({
   const [isLiked, setIsLiked] = useState(liked);
 
   return (
-    <div key={id} className={`product-card ${classes?.root ? classes.root : ""}`}>
+    <div
+      key={id}
+      className={`product-card ${classes?.root ? classes.root : ""}`}
+    >
       <Link to={`/product/${id}`} className="product-card__block-img">
         <img src={imageUrl} alt={name} className="product-card__image" />
         <button
@@ -28,7 +31,8 @@ export const Product = ({
             e.preventDefault();
             setIsLiked(!isLiked);
           }}
-          className="product-card__like">
+          className="product-card__like"
+        >
           <AnimatedLike isLiked={isLiked} />
         </button>
       </Link>
@@ -58,9 +62,11 @@ export const Product = ({
         </Link>
 
         <div className="product-card__actions">
-          <Button className="product-card__to-cart" color="yellow">
-            В корзину
-          </Button>
+          <NavLink to={"/cart"}>
+            <Button className="product-card__to-cart" color="yellow">
+              В корзину
+            </Button>
+          </NavLink>
           <Button className="product-card__fast-to-cart" color="yellow">
             <img src="/icons/lightning.svg" alt="" />
           </Button>

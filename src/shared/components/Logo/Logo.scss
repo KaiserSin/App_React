@@ -1,4 +1,16 @@
-@media screen and (max-width: 1087px) {
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+}
+.logo__img {
+  height: 51px;
+  vertical-align: middle;
+  max-width: 222px;
+}
+
+@media screen and (max-width: 1143px) {
   .logo {
     display: none;
   }
