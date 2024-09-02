@@ -365,9 +365,9 @@
 
 .background-item:has(.pale) .cart-items__product {
   border-radius: 10px 10px 0px 0px;
-  border-top: 1px dashed rgba(218, 218, 218, 1);
-  border-left: 1px dashed rgba(218, 218, 218, 1);
-  border-right: 1px dashed rgba(218, 218, 218, 1);
+  border-top: 1px dashed rgba(218, 218, 218, 0.6);
+  border-left: 1px dashed rgba(218, 218, 218, 0.6);
+  border-right: 1px dashed rgba(218, 218, 218, 0.6);
   border-bottom: none;
 }
 
