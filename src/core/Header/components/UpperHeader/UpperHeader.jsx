@@ -5,6 +5,7 @@ import Moon from "@assets/images/nightMode/moon.svg";
 import "./UpperHeader.scss";
 import map from "@assets/images/map.png";
 import openPvz from "@assets/images/open-pvz.png";
+import "./UpperHeader.scss";
 
 function UpperHeader() {
   const [isNightMode, setIsNightMode] = useState(false);

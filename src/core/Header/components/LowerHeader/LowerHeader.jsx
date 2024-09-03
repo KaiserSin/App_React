@@ -12,7 +12,7 @@ function LowerHeader() {
       <div className="lower-header__container">
         <div className="lower-header__body">
           <Logo />
-          <Button>
+          <Button className="lower-header__catalog-btn">
             <Link to={"/catalog"}>Каталог</Link>
           </Button>
           <SearchBar
