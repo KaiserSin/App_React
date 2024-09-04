@@ -16,6 +16,7 @@ body {
 body {
   font-size: 16px;
   font-family: "Jetbrainsmono";
+  background: rgba(249, 249, 249, 1);
 }
 
 h2 {
@@ -36,10 +37,6 @@ img {
   max-width: 1640px;
   padding-inline: 20px;
   margin: 0 auto;
-}
-
-#root {
-  background: rgba(249, 249, 249, 1);
 }
 
 .wrapper {
