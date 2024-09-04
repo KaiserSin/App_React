@@ -4,10 +4,11 @@
   color: white;
   font-family: "Raleway";
   &__container {
-    display: grid;
-    grid-template-columns: 400px 1fr 320px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    row-gap: 50px;
     padding-block: 45px;
   }
 
@@ -36,6 +37,7 @@
 }
 
 .footer-main-info {
+  flex: 0 1 400px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -70,6 +72,8 @@
 }
 
 .footer-links {
+  flex: 1 1 auto;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, 180px);
   justify-content: center;
@@ -81,6 +85,12 @@
   &__title {
     font-size: 16px;
     font-weight: 600;
+  }
+  @media (max-width: 1200px) {
+    flex: 1 1 100%;
+    order: -1;
+    row-gap: 50px;
+    justify-content: space-between;
   }
 }
 .footer-links-list {
@@ -97,6 +107,8 @@
 }
 
 .footer-secondary-info {
+  flex: 0 1 320px;
+
   &__contacts {
     display: flex;
     flex-direction: column;
