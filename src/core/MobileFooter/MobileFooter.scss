@@ -1,0 +1,25 @@
+.mobile-footer {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.mobile-footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.mobile-footer__icon {
+  min-width: 30px;
+  min-height: 30px;
+}
+
+@media (max-width: 700px) {
+  .mobile-footer__icons {
+    gap: 24px;
+  }
+}

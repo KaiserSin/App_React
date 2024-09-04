@@ -19,3 +19,20 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .notification-icon__count {
+    background-color: rgba(255, 75, 75, 1);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    right: -9px;
+    top: -7px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+}
