@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Arrow } from "@shared/components/Arrow/Arrow";
 import { Link } from "react-router-dom";
 import "./Slider.scss";
+import "./Slider.mobile.scss";
 
 import leftArrow from "@assets/images/LeftArrow.svg";
 import rightArrow from "@assets/images/RightArrow.svg";

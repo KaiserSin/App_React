@@ -50,13 +50,30 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .ad-section-two {
+    max-height: none;
+    margin-block: 12px;
+    padding: 0px;
+  }
   .ad-section-two__grid {
-    grid-template-columns: minmax(auto, 500px);
+    display: flex;
+    margin: 0 auto;
+    width: 360px;
   }
   .level-block {
     padding: 10px 22.5px;
   }
   .ad-section-two__block {
     display: none;
+  }
+  .progress-bar-block__level {
+    font-size: 10px;
+  }
+  .progress-bar-block__description {
+    font-size: 8px;
+  }
+  .level-block__crown {
+    width: 32px;
+    height: auto;
   }
 }

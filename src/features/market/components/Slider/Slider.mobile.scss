@@ -1,0 +1,13 @@
+@media screen and (max-width: 700px) {
+  .slider {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider {
+    height: 126px;
+  }
+  .slider__mask {
+    border-radius: 25px;
+  }
+}

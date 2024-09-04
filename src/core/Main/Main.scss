@@ -14,3 +14,18 @@
   z-index: 2;
   flex: 1 1 auto;
 }
+
+@media screen and (max-width: 700px) {
+  .main {
+    background: rgba(249, 249, 249, 1);
+    box-shadow: none;
+    padding-top: 0px;
+    margin-top: 12px;
+  }
+  .adsection {
+    padding-inline: 0px;
+  }
+  .itemssection {
+    padding-inline: 0px;
+  }
+}
