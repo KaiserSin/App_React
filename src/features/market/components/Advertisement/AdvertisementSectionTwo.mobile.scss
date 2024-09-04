@@ -7,7 +7,8 @@
   .ad-section-two__grid {
     display: flex;
     margin: 0 auto;
-    width: 360px;
+    min-width: 360px;
+    width: 100%;
   }
   .level-block {
     padding: 10px 22.5px;
