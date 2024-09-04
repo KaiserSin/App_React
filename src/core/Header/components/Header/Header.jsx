@@ -1,6 +1,7 @@
 import LowerHeader from "../LowerHeader/LowerHeader";
 import UpperHeader from "../UpperHeader/UpperHeader";
 import "./Header.scss";
+import "./Header.mobile.scss";
 
 function Header({ setShow, show }) {
   return (
