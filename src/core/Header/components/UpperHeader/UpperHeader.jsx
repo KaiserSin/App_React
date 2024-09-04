@@ -2,9 +2,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Moon from "@assets/images/nightMode/moon.svg";
-import "./UpperHeader.scss";
 import map from "@assets/images/map.png";
 import openPvz from "@assets/images/open-pvz.png";
+import "./UpperHeader.scss";
+import "./UpperHeader.mobile.scss";
 
 function UpperHeader() {
   const [isNightMode, setIsNightMode] = useState(false);

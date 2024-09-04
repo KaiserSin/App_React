@@ -21,3 +21,8 @@
 section {
   display: block;
 }
+@media screen and (max-width: 700px) {
+  .ad-section-three {
+    display: none;
+  }
+}

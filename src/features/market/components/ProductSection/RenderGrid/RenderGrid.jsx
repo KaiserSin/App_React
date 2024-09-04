@@ -1,5 +1,6 @@
 import React from "react";
 import "./RenderGrid.scss";
+import "./RenderGrid.mobile.scss";
 import { Product } from "@shared/components/Product/Product";
 
 const RenderGrid = ({ products }) => {
