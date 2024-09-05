@@ -54,6 +54,8 @@ export const catalogMobileLargeItems = [
   { name: "Электроника", imageSrc: "/mobile-catalog/electronics.jpg" },
   { name: "Мебель", imageSrc: "/mobile-catalog/furniture.jpg" },
   { name: "Спорт", imageSrc: "/mobile-catalog/sport.jpg" },
+  { name: "Дом и сад", imageSrc: "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66b2d462781deb3d51627024_Frame%2094.png" },
+  { name: "Дети", imageSrc: "https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66b2d4616e362dd649ba0b65_Frame%2095.png" },
 ];
 
 export const catalogMobileSmallItems = [
