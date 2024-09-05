@@ -26,7 +26,7 @@ function UpperHeader() {
               width="28"
               alt=""
             />
-            <span className="upper-header__link-text">{languageCode}</span>
+            <span className="upper-header__link-text">RUB</span>
           </div>
           <nav className="upper-header__links">
             <Link
