@@ -26,7 +26,6 @@
   &__small-items {
     flex: 1 1 auto;
     align-content: start;
-    padding-inline: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 50px);
     justify-content: space-between;
