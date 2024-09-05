@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 import DropDown from "./SearchBarDropDown";
+import cameraButton from "@assets/images/cameraButton.svg";
 
 import "./SearchBar.scss";
 
@@ -25,7 +26,7 @@ function SearchBar(props) {
         </button>
         <button className="search-bar-actions__item">
           <img
-            src="https://cdn.prod.website-files.com/66ab7b46556019f9117db3ca/66ab949b8c4db5c04e1a4bf8_CameraButton.svg"
+            src={cameraButton}
             alt="Icon"
             className="search-bar-actions__icon"
           />
