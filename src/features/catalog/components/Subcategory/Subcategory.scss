@@ -15,4 +15,7 @@
     font-size: 18px;
     color: rgba(0, 88, 100, 1);
   }
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
 }

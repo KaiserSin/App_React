@@ -7,6 +7,9 @@ import ProductPage from "../features/market/pages/ProductPage/ProductPage";
 import CartPage from "@features/cart/pages/CartPage";
 import { CatalogPage } from "../features/catalog/pages/Catalog-page";
 
+import MediaQuery from "react-responsive";
+import MobileCatalogPage from "@/features/catalog/pages/MobileCatalogPage";
+
 export const privateRoutes = [
   // {path: "/", element:  }
 ];
@@ -19,7 +22,16 @@ export const publicRoutes = [
       { path: "/", element: <HomePage /> },
       { path: "profile", element: <Profile /> },
       { path: "cart", element: <CartPage /> },
-      { path: "catalog", element: <CatalogPage /> },
+      {
+        path: "catalog",
+        element: (
+          <MediaQuery maxWidth={700}>
+            {(matches) => {
+              return matches ? <MobileCatalogPage /> : <CatalogPage />;
+            }}
+          </MediaQuery>
+        ),
+      },
       { path: "inactive-link", element: <Plug /> },
       {
         path: "product/:id",
