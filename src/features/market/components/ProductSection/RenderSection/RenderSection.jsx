@@ -2,6 +2,7 @@ import React from "react";
 import { RenderGrid } from "../RenderGrid/RenderGrid";
 
 import "./RenderSection.scss";
+import "./RenderSection.mobile.scss";
 
 const RenderSec = ({ products }) => {
   const grids = RenderGrid({ products });

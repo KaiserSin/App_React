@@ -1,0 +1,16 @@
+@media screen and (max-width: 700px) {
+  .itemsgrid {
+    gap: 12px;
+    padding: 0px;
+    background: none;
+    overflow: visible;
+  }
+  .product-card:nth-child(n + 4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 590px) {
+  .product-card:nth-child(n + 3) {
+    display: none;
+  }
+}

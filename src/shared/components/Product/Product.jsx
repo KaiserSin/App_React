@@ -1,6 +1,7 @@
 import star from "@assets/images/cartImages/Star.svg";
 import Button from "@shared/components/Buttons/Button/Button";
 import "./Product.scss";
+import "./Product.mobile.scss";
 import AnimatedLike from "../AnimatedLike/AnimatedLike";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
