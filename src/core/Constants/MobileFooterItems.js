@@ -27,6 +27,13 @@ export const MobileFooterItems = [
     notificationCount: 4,
     link: "/cart",
   },
-  { iconSrc: Search, alt: "Search" },
-  { iconSrc: Strips, alt: "Menu" },
+  {
+    iconSrc: Search,
+    alt: "Search",
+  },
+  {
+    iconSrc: Strips,
+    alt: "Menu",
+    link: "/catalog",
+  },
 ];
