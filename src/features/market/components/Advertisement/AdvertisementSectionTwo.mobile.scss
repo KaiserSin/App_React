@@ -3,24 +3,35 @@
     max-height: none;
     margin-block: 12px;
     padding: 0px;
+    height: 54px;
   }
   .ad-section-two__grid {
     display: flex;
     margin: 0 auto;
     min-width: 360px;
     width: 100%;
+
+    height: 54px;
   }
   .level-block {
-    padding: 10px 22.5px;
+    box-shadow: none;
+    padding: 9px 21px;
+  }
+  .progress-bar-block__wrapper {
+    width: auto;
   }
   .ad-section-two__block {
     display: none;
   }
   .progress-bar-block__level {
     font-size: 10px;
+
+    padding-bottom: 0px;
   }
   .progress-bar-block__description {
     font-size: 8px;
+    line-height: 0px;
+    padding-bottom: 10px;
   }
   .level-block__crown {
     width: 32px;

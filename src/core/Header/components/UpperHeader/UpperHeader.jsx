@@ -33,7 +33,7 @@ function UpperHeader() {
               to={"https://www.google.com/search?q=Москва: Пушкина 10"}
               className="upper-header__link"
             >
-              🏠 Москва: Пушкина 10
+              📍 Плесецкая 6
             </Link>
             <Link to={"/"} className="upper-header__link">
               💼 Наши вакансии

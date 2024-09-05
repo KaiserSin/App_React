@@ -21,6 +21,9 @@
     box-shadow: none;
     padding-top: 0px;
     margin-top: 12px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
   }
   .adsection {
     padding-inline: 0px;

@@ -15,7 +15,7 @@ const HomePage = () => {
       const sizeData = await api.getSize();
       size = sizeData + 40;
       const items = await api.getItems(41, 50);
-      console.log(items);
+
       setProducts(items.map((val) => ({ ...val, isFiltered: true })));
     };
     fetchData();
@@ -27,12 +27,10 @@ const HomePage = () => {
 
   const handleScroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-      console.log("I'm here");
       if (isMore) {
         if ((counter + 1) * 10 >= size) {
           setIsMore(false);
         }
-        console.log(counter * 10, Math.min((counter + 1) * 10, size));
         api
           .getItems(counter * 10, Math.min((counter + 1) * 10, size))
           .then((val) => {
