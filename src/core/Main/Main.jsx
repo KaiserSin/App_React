@@ -1,7 +1,8 @@
 import "./Main.scss";
+import classNames from "classnames";
 
-const Main = ({ children }) => {
-  return <main className="main">{children}</main>;
+const Main = ({ children, className }) => {
+  return <main className={classNames("main", className)}>{children}</main>;
 };
 
 export default Main;

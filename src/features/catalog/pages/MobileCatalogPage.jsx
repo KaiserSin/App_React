@@ -6,6 +6,7 @@ import Button from "@shared/components/Buttons/Button/Button";
 import { catalogMobileLargeItems, catalogMobileSmallItems } from "../Constants/Categories";
 
 const MobileCatalogPage = () => {
+
   return (
     <div className="mobile-catalog">
       <h1 className="mobile-catalog__title">Каталог</h1>
@@ -33,7 +34,7 @@ const MobileCatalogPage = () => {
           );
         })}
       </div>
-      {/* <Button className={"mobile-catalog__others"}>Другое</Button> */}
+      <Button className={"mobile-catalog__others"}>Другое</Button>
     </div>
   );
 };
