@@ -18,6 +18,17 @@
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
     padding: 34px 25px 34px 25px;
     text-align: center;
+    @media (max-width: 1200px) {
+      padding: 20px;
+
+      width: 100%;
+      flex-direction: row;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
   }
   &__menu-item {
     font-weight: 400;
@@ -35,5 +46,8 @@
 
   &__menu-item.active {
     background-color: rgba(218, 218, 218, 0.4);
+  }
+  @media (max-width: 1200px) {
+    flex-direction: column;
   }
 }
