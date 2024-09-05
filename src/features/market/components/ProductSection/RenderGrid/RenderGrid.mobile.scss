@@ -4,6 +4,8 @@
     padding: 0px;
     background: none;
     overflow: visible;
+    width: 100%;
+    justify-content: space-between;
   }
   .product-card:nth-child(n + 4) {
     display: none;
