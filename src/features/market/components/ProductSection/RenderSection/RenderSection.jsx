@@ -2,10 +2,11 @@ import { RenderGrid } from "../RenderGrid/RenderGrid";
 
 import "./RenderSection.scss";
 import "./RenderSection.mobile.scss";
+import { useMediaQuery } from "react-responsive";
 
 const RenderSec = ({ products }) => {
   const grids = RenderGrid({ products });
-
+  const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
   let answer = [];
 
   if (grids.length > 0) {
@@ -41,7 +42,7 @@ const RenderSec = ({ products }) => {
       answer.push(
         <section key="itemssec3" className="itemssection">
           <div key="itemsbg3" className="itemsbg">
-            {grids.slice(3)}
+            {grids.slice(isMobile ? 3 : 7)}
           </div>
         </section>
       );

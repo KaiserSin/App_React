@@ -10,6 +10,7 @@ const alias = {
   "@shared": resolveAlias("./src/shared"),
   "@features": resolveAlias("./src/features"),
   "@core": resolveAlias("./src/core"),
+  "@hooks": resolveAlias("./src/hooks"),
   "~": resolveAlias("./"),
 };
 
