@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
 import DropDown from "./SearchBarDropDown";
-import cameraButton from "@assets/images/cameraButton.svg";
+import cameraButton from "/header/cameraButton.svg";
 
 import "./SearchBar.scss";
 
