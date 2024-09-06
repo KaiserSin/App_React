@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 24px;
   gap: 36px;
 
   &__grid {
@@ -45,6 +45,9 @@
   margin: 0 auto;
   gap: 33px;
   max-width: 1600px;
+  background-color: rgba(255, 255, 255, 0.65);
+  padding-top: 43px;
+  border-radius: 20px;
 }
 
 .product-strip {
