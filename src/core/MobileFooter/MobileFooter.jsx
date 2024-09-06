@@ -1,7 +1,7 @@
 import IconWithNotification from "@shared/components/IconWithNotification/IconWithNotification";
-import "./MobileFooter.scss";
+import { useLocation, useNavigate } from "react-router-dom";
 import { MobileFooterItems } from "../Constants/MobileFooterItems";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import "./MobileFooter.scss";
 
 export const MobileFooter = () => {
   const location = useLocation();
