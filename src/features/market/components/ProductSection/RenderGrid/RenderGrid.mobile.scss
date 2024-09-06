@@ -3,15 +3,23 @@
     gap: 12px;
     padding: 0px;
     background: none;
-    overflow: visible;
+    overflow-x: auto;
     width: 100%;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .itemsgrid {
     justify-content: space-between;
+    overflow-x: visible;
   }
   .product-card:nth-child(n + 4) {
     display: none;
   }
-}
-@media screen and (max-width: 590px) {
   .product-card:nth-child(n + 3) {
     display: none;
   }
