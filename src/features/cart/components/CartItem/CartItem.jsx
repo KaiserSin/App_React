@@ -112,7 +112,7 @@ const CartItem = ({
             <div className="new-quantity">
               <div className="cart-items__quantity-rating">
                 <button className="cart-items__quantity-btn"> - </button>
-                <span>{quantity}</span>
+                <span className="quantity-of-goods">{quantity}</span>
                 <button className="cart-items__quantity-btn"> + </button>
               </div>
             </div>
