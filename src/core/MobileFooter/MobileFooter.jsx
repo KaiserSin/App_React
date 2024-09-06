@@ -7,19 +7,11 @@ export const MobileFooter = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const handleStripsClick = () => {
-    if (location.pathname === "/catalog") {
+  const handleClick = (pathname) => {
+    if (location.pathname === pathname) {
       navigate("/");
     } else {
-      navigate("/catalog");
-    }
-  };
-
-  const handleCartClick = () => {
-    if (location.pathname === "/cart") {
-      navigate("/");
-    } else {
-      navigate("/cart");
+      navigate(pathname);
     }
   };
 
@@ -31,7 +23,7 @@ export const MobileFooter = () => {
             return (
               <button
                 key={index}
-                onClick={handleStripsClick}
+                onClick={() => handleClick(item.link)}
                 className="mobile-footer__icon-button"
               >
                 <img
@@ -45,7 +37,7 @@ export const MobileFooter = () => {
             return (
               <button
                 key={index}
-                onClick={handleCartClick}
+                onClick={() => handleClick(item.link)}
                 className="mobile-footer__icon-button"
               >
                 <IconWithNotification
