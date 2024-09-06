@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    box-shadow: 4px 4px 14.7px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.1);
     background: rgb(255, 255, 255);
     overflow: hidden;
     width: 100%;
@@ -87,6 +87,7 @@
 
   &__to-cart {
     flex: 0 90px;
+    padding: 8px 20px;
   }
 
   &__fast-to-cart {
@@ -132,12 +133,14 @@
   }
   .product-card__to-cart {
     padding: 5px 35px;
+    border-radius: 8px;
     background: rgba(255, 218, 123, 1);
   }
   .product-card__fast-to-cart {
     flex: none;
     width: 24px;
     height: 24px;
+    border-radius: 8px;
 
     background: rgba(255, 218, 123, 1);
     img {
