@@ -74,10 +74,13 @@
   border-radius: 10px;
   align-items: center;
   gap: 10px;
-  padding: 10px 20px;
+  padding: 8px 20px;
 }
 .search-bar-actions__item:nth-child(2) img {
   width: 23px;
+}
+.lower-header__catalog-btn {
+  padding: 11px 20px;
 }
 @media screen and (max-width: 700px) {
   .search-bar-actions__item:nth-child(2) img {
