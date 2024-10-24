@@ -9,6 +9,7 @@ import { CatalogPage } from "../features/catalog/pages/Catalog-page";
 
 import MediaQuery from "react-responsive";
 import MobileCatalogPage from "@/features/catalog/pages/MobileCatalogPage";
+import { AiPage } from "../features/ai/pages/Ai";
 
 export const privateRoutes = [
   // {path: "/", element:  }
@@ -22,6 +23,7 @@ export const publicRoutes = [
       { path: "/", element: <HomePage /> },
       { path: "profile", element: <Profile /> },
       { path: "cart", element: <CartPage /> },
+      { path: "ai", element: <AiPage /> },
       {
         path: "catalog",
         element: (

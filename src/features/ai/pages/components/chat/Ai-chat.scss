@@ -1,0 +1,18 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  height: 100%;
+}
+.chat__form {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  height: 60px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+}
+.chat__input {
+  flex: 1 auto;
+}

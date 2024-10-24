@@ -1,0 +1,62 @@
+.dialogues {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 322px;
+  min-height: 721px;
+}
+.dialogues__body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.dialogues__section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+  padding-inline: 25px;
+  h2 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.12px;
+    color: rgba(151, 151, 151, 1);
+  }
+  .section__items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .section__item {
+    padding-left: 10px;
+    padding-right: 18px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.12px;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: rgba(217, 217, 217, 1);
+    .button__item {
+      width: 6px;
+      height: 6px;
+      background: rgba(217, 217, 217, 1);
+      border-radius: 50%;
+    }
+  }
+}
+.section__item.active {
+  background: rgba(241, 241, 241, 0.756);
+}
