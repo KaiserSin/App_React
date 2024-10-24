@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import TextButton from "@shared/components/Buttons/TextButton/TextButton";
 import "./SwiftMartAIBlock.scss";
 const SwiftMartAIBlock = (props) => {
@@ -19,7 +19,7 @@ const SwiftMartAIBlock = (props) => {
       <div className="ai-block__actions">
         <TextButton>
           <img src="/icons/dialog.svg" alt="" />
-          Открыть диалог с GPT
+          <Link to={"/ai"}> Открыть диалог с GPT</Link>
         </TextButton>
         <TextButton>
           <img src="/icons/retry.svg" alt="" />
