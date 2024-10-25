@@ -42,7 +42,7 @@ export const ChatWindow = (props) => {
                   <span>Обращайтесь, если возникнут вопросы!</span>
                 </div>
                 <button className="message__button">
-                  <img src="/ai/ai-cart.svg" alt="ai cart" width={12} />
+                  <img src="/ai/ai-cart.svg" alt="ai cart" width={17} />
                   <span>Добавить в корзину</span>
                 </button>
               </div>

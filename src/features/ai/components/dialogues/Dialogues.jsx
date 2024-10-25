@@ -1,7 +1,7 @@
 import { DialoguesHeader } from "../dialogues-header/Dialogues-header";
 import "./Dialogues.scss";
 
-import { dialogues } from "../../../constants/dialogues-constants";
+import { dialogues } from "../../constants/dialogues-constants";
 import { useState } from "react";
 
 export const Dialogues = () => {
