@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Ai-chat.scss";
 import { ChatWindow } from "../chat-window/Chat-window";
-import { useInputChange } from "../../../../../hooks/useInputChange";
+import { useInputChange } from "../../../../hooks/useInputChange";
 
 const items = [
   {
@@ -20,13 +20,17 @@ const items = [
 ];
 
 export const AiChat = () => {
-  const [messages, setMessages] = useState(items);
+  const [messages, setMessages] = useState([]);
   const input = useInputChange("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input.value) {
-      setMessages((prev) => [...prev, { text: input.value, from: "Alex" }]);
+      if (!messages.length) {
+        setMessages((prev) => [...prev, ...items]);
+      } else {
+        setMessages((prev) => [...prev, { text: input.value, from: "Alex" }]);
+      }
       input.reset();
     }
   };

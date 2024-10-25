@@ -45,14 +45,16 @@
 .message__button {
   display: flex;
   gap: 6px;
-  align-items: flex-start;
-  width: 193px;
+  align-items: center;
+  width: 155px;
   padding: 8px 22px;
   border: 1.2px solid rgba(23, 23, 23, 1);
   border-radius: 10px;
   margin-top: 20px;
   font-size: 12px;
-  line-height: 15.84px;
+  span {
+    margin-top: 3px;
+  }
 }
 .message.ai {
   align-self: flex-start;
