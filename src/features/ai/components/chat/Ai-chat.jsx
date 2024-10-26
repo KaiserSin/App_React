@@ -3,21 +3,20 @@ import "./Ai-chat.scss";
 import { ChatWindow } from "../chat-window/Chat-window";
 import { useInputChange } from "../../../../hooks/useInputChange";
 
-const items = [
-  {
-    from: "Alex",
-    text: "Привет, подскажи качественную игровую мышку до 6 тысяч руб.",
-  },
-  {
-    from: "Ai",
-    text: "Привет! Конечно, вот несколько вариантов:",
-    variants: [
-      { text: "Logitech G102 - 2132 руб.", seller: "(продавец)" },
-      { text: "SteelSeries Rival 5 - 4652 руб.", seller: "(продавец)" },
-      { text: "Razer Basilisk V3 - 5100 руб.", seller: "(продавец)" },
-    ],
-  },
-];
+const msgFromAi = {
+  from: "Ai",
+  text: "Привет! Конечно, вот несколько вариантов:",
+  variants: [
+    { text: "Logitech G102 - 2132 руб.", seller: "(продавец)" },
+    { text: "SteelSeries Rival 5 - 4652 руб.", seller: "(продавец)" },
+    { text: "Razer Basilisk V3 - 5100 руб.", seller: "(продавец)" },
+  ],
+};
+
+const msgFromUser = {
+  from: "Alex",
+  text: "Привет, подскажи качественную игровую мышку до 6 тысяч руб.",
+};
 
 export const AiChat = () => {
   const [messages, setMessages] = useState([]);
@@ -27,10 +26,13 @@ export const AiChat = () => {
     e.preventDefault();
     if (input.value) {
       if (!messages.length) {
-        setMessages((prev) => [...prev, ...items]);
+        setMessages((prev) => [...prev, msgFromUser]);
       } else {
         setMessages((prev) => [...prev, { text: input.value, from: "Alex" }]);
       }
+      setTimeout(() => {
+        setMessages((prev) => [...prev, msgFromAi]);
+      }, 2000);
       input.reset();
     }
   };
