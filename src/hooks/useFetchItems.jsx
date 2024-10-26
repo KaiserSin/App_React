@@ -1,25 +1,23 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import api from "@/services/items";
+import productsJson from "./productStrip.json";
 
 export const useFetchItems = (isMobile, maxRequests) => {
   const [products, setProducts] = useState([]);
   const [isMore, setIsMore] = useState(true);
   const requestCount = useRef(0);
   const counter = useRef(1);
-  const size = useRef(0);
+  const size = useRef(products.length);
 
-  const fetchData = useCallback(async () => {
+  const fetchData = useCallback(() => {
     if (!isMore || requestCount.current >= maxRequests) return;
 
     requestCount.current += 1;
-    const newItems = await api.getItems(
+    const newItems = productsJson.slice(
       counter.current * 10,
       Math.min((counter.current + 1) * 10, size.current)
     );
-    setProducts((prevProducts) => [
-      ...prevProducts,
-      ...newItems.map((v) => ({ ...v, isFiltered: true })),
-    ]);
+    setProducts((prevProducts) => [...prevProducts, ...newItems]);
     counter.current += 1;
 
     if (counter.current * 10 >= size.current) {
@@ -28,11 +26,9 @@ export const useFetchItems = (isMobile, maxRequests) => {
   }, [isMore, maxRequests]);
 
   useEffect(() => {
-    const initializeData = async () => {
-      const sizeData = await api.getSize();
-      size.current = sizeData;
-      const items = await api.getItems(1, 10);
-      setProducts(items.map((val) => ({ ...val, isFiltered: true })));
+    const initializeData = () => {
+      const items = productsJson.slice(0, 10);
+      setProducts(items);
     };
 
     initializeData();
@@ -40,7 +36,6 @@ export const useFetchItems = (isMobile, maxRequests) => {
 
   return { products, fetchData, isMore };
 };
-
 export const useInfiniteScroll = (isMobile, fetchData) => {
   useEffect(() => {
     const handleScroll = () => {
