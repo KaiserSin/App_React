@@ -18,6 +18,11 @@ const msgFromUser = {
   text: "Привет, подскажи качественную игровую мышку до 6 тысяч руб.",
 };
 
+const msgFromAiWithImage = {
+  from: "Ai",
+  imgUrl: "./ai/mouse.png",
+};
+
 export const AiChat = () => {
   const [messages, setMessages] = useState([]);
   const input = useInputChange("");
@@ -30,9 +35,20 @@ export const AiChat = () => {
       } else {
         setMessages((prev) => [...prev, { text: input.value, from: "Alex" }]);
       }
-      setTimeout(() => {
-        setMessages((prev) => [...prev, msgFromAi]);
-      }, 2000);
+      if (
+        (String(input.value).includes("Сгенерируй") ||
+          String(input.value).includes("сгенерируй")) &&
+        messages.length
+      ) {
+        setTimeout(() => {
+          setMessages((prev) => [...prev, msgFromAiWithImage]);
+        }, 4000);
+      } else {
+        setTimeout(() => {
+          setMessages((prev) => [...prev, msgFromAi]);
+        }, 2000);
+      }
+
       input.reset();
     }
   };
