@@ -13,7 +13,11 @@ export const ChatWindow = (props) => {
   };
 
   useEffect(() => {
-    scrollToBottom();
+    const timeout = setTimeout(() => {
+      scrollToBottom();
+    }, 100);
+
+    return () => clearTimeout(timeout);
   }, [props.messages]);
 
   return (
@@ -28,23 +32,37 @@ export const ChatWindow = (props) => {
               <div className="message__content">
                 <header className="message__header">Swift Mart AI</header>
                 <div className="message__body">
-                  <h2>{message.text}</h2>
-                  <div className="message__variants">
-                    {message.variants.map((variant) => (
-                      <div key={variant.text}>
-                        <span>{variant.text}</span>
-                        <Link href="/catalog" className="message__link">
-                          {variant.seller}
-                        </Link>
+                  {message.imgUrl ? (
+                    <>
+                      <span>Привет!Вот твое сгенерированное изображение:</span>
+                      <img src={message.imgUrl} width={250}></img>
+                    </>
+                  ) : (
+                    <>
+                      <h2>{message.text}</h2>
+                      <div className="message__variants">
+                        {message.variants.map((variant) => (
+                          <div key={variant.text}>
+                            <span>{variant.text}</span>
+                            <Link href="/catalog" className="message__link">
+                              {variant.seller}
+                            </Link>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
+                    </>
+                  )}
+
                   <span>Обращайтесь, если возникнут вопросы!</span>
                 </div>
-                <button className="message__button">
-                  <img src="/ai/ai-cart.svg" alt="ai cart" width={17} />
-                  <span>Добавить в корзину</span>
-                </button>
+                {message.imgUrl ? (
+                  ""
+                ) : (
+                  <button className="message__button">
+                    <img src="/ai/ai-cart.svg" alt="ai cart" width={17} />
+                    <span>Добавить в корзину</span>
+                  </button>
+                )}
               </div>
             </div>
           );
